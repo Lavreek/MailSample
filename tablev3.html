@@ -2,154 +2,877 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width">
 		<meta name="x-apple-disable-message-reformatting">
 	</head>
 	<style type="text/css">
-		@media screen {
+		body, div, p, a, li, td {
+	        -webkit-text-size-adjust:none;
+	    }
+
+	    body {
+	    	width:100%;
+            height:100%;
+            background-color:#ffffff;
+            margin:0;
+            padding:0;
+            -webkit-font-smoothing:antialiased;
+	    }
+
+	    table {
+			border: 0px!important;
+			border-spacing: 0px!important;
+		}
+
+		html, body {
+			margin: 0!important;
+		}
+
+		@media (max-width: 768px) {
 			body {
-				width: device-width;
-				-webkit-text-size-adjust:none;
-				-ms-text-size-adjust: none;
+				width: 768px!important;
 			}
 
-			table {
-				border: 1px solid transparent!important;
-				border-spacing: 0px!important;
+			.main-body {
+				/*max-width: 768px!important;*/
+			}
+
+			.header {
+				width: 300px!important;
+			}
+
+			.header-phone-label {
+				font-size: 22px!important;
+			}
+
+			.header-phone-number {
+				font-size: 20px!important;
+			}
+
+			.content-container-pad {
+				padding: 1.5em!important;
+			}
+
+			.content-container-head {
+				font-size: 22px;
+			}
+
+			.content-container-title {
+				font-size: 50px!important;
+				line-height: 50px!important;
+			}
+
+			.content-container-date {
+				font-size: 22px!important;
+			}
+
+			.content-container-time {
+				font-size: 22px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 365px!important;
+			}
+
+			.content-container-button {
+				padding-top: 1.5em!important;
+				padding-bottom: 1.5em!important;
+			}
+
+			.content-container-link {
+				font-size: 22px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 22px!important;
+				line-height: 22px!important;
+			}
+
+			.info-link {
+				font-size: 22px!important;
+			}
+
+			.info-footer {
+				font-size: 20px!important;
+				line-height: 20px!important;
+			}
+
+			.nav-item {
+				font-size: 20px!important;
+			}
+
+			.ref-img {
+				width: 40px!important;
+			}
+
+			.ref-link {
+				font-size: 18px!important;
+			}
+
+			.footer-text {
+				font-size: 13px!important;
+				line-height: 13px!important;
+			}
+
+			.footer-img {
+				width: 13px!important;
+			}
+
+			html, body {
+				margin: 0!important;
+			}
+
+			.w-768 {
+				display: block!important;
+			}
+		}
+
+		@media (device-width: 768px) {
+			body {
+				width: 768px!important;
+			}
+
+			.header {
+				width: 300px!important;
+			}
+
+			.header-phone-label {
+				font-size: 22px!important;
+			}
+
+			.header-phone-number {
+				font-size: 20px!important;
+			}
+
+			.content-container-pad {
+				padding: 1.5em!important;
+			}
+
+			.content-container-head {
+				font-size: 22px;
+			}
+
+			.content-container-title {
+				font-size: 50px!important;
+				line-height: 50px!important;
+			}
+
+			.content-container-date {
+				font-size: 22px!important;
+			}
+
+			.content-container-time {
+				font-size: 22px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 365px!important;
+			}
+
+			.content-container-button {
+				padding-top: 1.5em!important;
+				padding-bottom: 1.5em!important;
+			}
+
+			.content-container-link {
+				font-size: 22px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 22px!important;
+				line-height: 22px!important;
+			}
+
+			.info-link {
+				font-size: 22px!important;
+			}
+
+			.info-footer {
+				font-size: 20px!important;
+				line-height: 20px!important;
+			}
+
+			.nav-item {
+				font-size: 20px!important;
+			}
+
+			.ref-img {
+				width: 40px!important;
+			}
+
+			.ref-link {
+				font-size: 18px!important;
+			}
+
+			.footer-text {
+				font-size: 13px!important;
+				line-height: 13px!important;
+			}
+
+			.footer-img {
+				width: 13px!important;
+			}
+
+			
+
+			.w-768 {
+				display: block!important;
 			}
 		}
 
 		@media (max-width: 425px) {
 			body {
+				width: 425px!important;
 			}
 
-			.w-425 {
-				display: block!important;
+			.main-body {
+				/*max-width: auto!important;*/
 			}
 
-			.header	{
-				height: 6em;
+			.header {
+				width: 450px!important;
 			}
 
 			.header-phone-label {
-				font-size: 2.8em!important;
+				font-size: 35px!important;
 			}
 
 			.header-phone-number {
-				font-size: 2.2em!important;
+				font-size: 34px!important;
+			}
+
+			.table-content {
+				max-width: 300px!important;
+			}
+
+			.content-container-pad {
+				padding: 2em!important;
+			}
+
+			.content-container-head {
+				font-size: 40px!important;
+			}
+
+			.content-container-title {
+				font-size: 80px!important;
+				line-height: 80px!important;
+			}
+
+			.content-container-date {
+				font-size: 40px!important;
+			}
+
+			.content-container-time {
+				font-size: 40px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 512px!important;
+			}
+
+			.content-container-button {
+				padding-top: 2em!important;
+				padding-bottom: 2em!important;
+			}
+
+			.content-container-link {
+				font-size: 40px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.info-link {
+				font-size: 40px!important;
+			}
+
+			.info-footer {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.nav-item {
+				font-size: 30px!important;
+			}
+
+			.ref-img {
+				width: 65px!important;
+			}
+
+			.ref-link {
+				font-size: 35px!important;
+			}
+
+			.footer-text {
+				font-size: 25px!important;
+				line-height: 25px!important;
+			}
+
+			.footer-img {
+				width: 25px!important;
+			}
+
+			
+
+			.w-425 {
+				display: block!important;
 			}
 		}
 
 		@media (device-width: 425px) {
 			body {
+				width: 425px!important;
 			}
 
-			.w-425 {
-				display: block;
+			.main-body {
+				/*max-width: auto!important;*/
 			}
 
-			.header	{
-				height: 6em;
+			.header {
+				width: 450px!important;
 			}
 
 			.header-phone-label {
-				font-size: 2.8em!important;
+				font-size: 35px!important;
 			}
 
 			.header-phone-number {
-				font-size: 2.2em!important;
+				font-size: 34px!important;
+			}
+
+			.table-content {
+				max-width: 300px!important;
+			}
+
+			.content-container-pad {
+				padding: 2em!important;
+			}
+
+			.content-container-head {
+				font-size: 40px!important;
+			}
+
+			.content-container-title {
+				font-size: 80px!important;
+				line-height: 80px!important;
+			}
+
+			.content-container-date {
+				font-size: 40px!important;
+			}
+
+			.content-container-time {
+				font-size: 40px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 512px!important;
+			}
+
+			.content-container-button {
+				padding-top: 2em!important;
+				padding-bottom: 2em!important;
+			}
+
+			.content-container-link {
+				font-size: 40px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.info-link {
+				font-size: 40px!important;
+			}
+
+			.info-footer {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.nav-item {
+				font-size: 30px!important;
+			}
+
+			.ref-img {
+				width: 65px!important;
+			}
+
+			.ref-link {
+				font-size: 35px!important;
+			}
+
+			.footer-text {
+				font-size: 25px!important;
+				line-height: 25px!important;
+			}
+
+			.footer-img {
+				width: 25px!important;
+			}
+
+			
+
+			.w-425 {
+				display: block!important;
 			}
 		}
-
+		
 		@media (max-width: 375px) {
 			body {
+				width: 375px!important;
+			}
+
+			.main-body {
+				/*max-width: auto!important;*/
+			}
+
+			.header {
+				width: 450px!important;
+			}
+
+			.header-phone-label {
+				font-size: 35px!important;
+			}
+
+			.header-phone-number {
+				font-size: 34px!important;
+			}
+
+			.table-content {
+				max-width: 300px!important;
+			}
+
+			.content-container-pad {
+				padding: 2em!important;
+			}
+
+			.content-container-head {
+				font-size: 40px!important;
+			}
+
+			.content-container-title {
+				font-size: 80px!important;
+				line-height: 80px!important;
+			}
+
+			.content-container-date {
+				font-size: 40px!important;
+			}
+
+			.content-container-time {
+				font-size: 40px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 512px!important;
+			}
+
+			.content-container-button {
+				padding-top: 2em!important;
+				padding-bottom: 2em!important;
+			}
+
+			.content-container-link {
+				font-size: 40px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.info-link {
+				font-size: 40px!important;
+			}
+
+			.info-footer {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.nav-item {
+				font-size: 30px!important;
+			}
+
+			.ref-img {
+				width: 65px!important;
+			}
+
+			.ref-link {
+				font-size: 35px!important;
+			}
+
+			.footer-text {
+				font-size: 25px!important;
+				line-height: 25px!important;
+			}
+
+			.footer-img {
+				width: 25px!important;
+			}
+
+			html, body {
+				margin: 0!important;
 			}
 
 			.w-375 {
 				display: block!important;
-			}
-
-			.header	{
-				height: 7em;
-			}
-
-			.header-phone-label {
-				font-size: 2.9em!important;
-			}
-
-			.header-phone-number {
-				font-size: 2.5em!important;
 			}
 		}
 
 		@media (device-width: 375px) {
 			body {
+				width: 375px!important;
 			}
 
-			.w-375 {
-				display: block;
+			.main-body {
+				/*max-width: auto!important;*/
 			}
 
-			.header	{
-				height: 7em;
+			.header {
+				width: 450px!important;
 			}
 
 			.header-phone-label {
-				font-size: 2.9em!important;
+				font-size: 35px!important;
 			}
 
 			.header-phone-number {
-				font-size: 2.5em!important;
+				font-size: 34px!important;
+			}
+
+			.table-content {
+				max-width: 300px!important;
+			}
+
+			.content-container-pad {
+				padding: 2em!important;
+			}
+
+			.content-container-head {
+				font-size: 40px!important;
+			}
+
+			.content-container-title {
+				font-size: 80px!important;
+				line-height: 80px!important;
+			}
+
+			.content-container-date {
+				font-size: 40px!important;
+			}
+
+			.content-container-time {
+				font-size: 40px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 512px!important;
+			}
+
+			.content-container-button {
+				padding-top: 2em!important;
+				padding-bottom: 2em!important;
+			}
+
+			.content-container-link {
+				font-size: 40px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.info-link {
+				font-size: 40px!important;
+			}
+
+			.info-footer {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.nav-item {
+				font-size: 30px!important;
+			}
+
+			.ref-img {
+				width: 65px!important;
+			}
+
+			.ref-link {
+				font-size: 35px!important;
+			}
+
+			.footer-text {
+				font-size: 25px!important;
+				line-height: 25px!important;
+			}
+
+			.footer-img {
+				width: 25px!important;
+			}
+
+			html, body {
+				margin: 0!important;
+			}
+
+			.w-375 {
+				display: block!important;
 			}
 		}
 
+
 		@media (max-width: 320px) {
 			body {
+				width: 320px!important;
+			}
+
+			.main-body {
+				/*max-width: auto!important;*/
+			}
+
+			.header {
+				width: 450px!important;
+			}
+
+			.header-phone-label {
+				font-size: 40px!important;
+			}
+
+			.header-phone-number {
+				font-size: 40px!important;
+			}
+
+			.table-content {
+				max-width: none!important;
+			}
+
+			.content-container-pad {
+				padding: 2em!important;
+			}
+
+			.content-container-head {
+				font-size: 40px!important;
+			}
+
+			.content-container-title {
+				font-size: 80px!important;
+				line-height: 80px!important;
+			}
+
+			.content-container-date {
+				font-size: 40px!important;
+			}
+
+			.content-container-time {
+				font-size: 40px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 512px!important;
+			}
+
+			.content-container-button {
+				padding-top: 2em!important;
+				padding-bottom: 2em!important;
+			}
+
+			.content-container-link {
+				font-size: 40px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.info-link {
+				font-size: 40px!important;
+			}
+
+			.info-footer {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.nav-item {
+				font-size: 30px!important;
+			}
+
+			.ref-img {
+				width: 65px!important;
+			}
+
+			.ref-link {
+				font-size: 35px!important;
+			}
+
+			.footer-text {
+				font-size: 25px!important;
+				line-height: 25px!important;
+			}
+
+			.footer-img {
+				width: 25px!important;
+			}
+
+			html, body {
+				margin: 0!important;
 			}
 
 			.w-320 {
 				display: block!important;
 			}
-
-			.header	{
-				height: 7em;
-			}
-
-			.header-phone-label {
-				font-size: 3em!important;
-			}
-
-			.header-phone-number {
-				font-size: 2.7em!important;
-			}
 		}
 
 		@media (device-width: 320px) {
 			body {
+				width: 320px!important;
 			}
 
-			.w-320 {
-				display: block;
+			.main-body {
+				/*max-width: auto!important;*/
 			}
 
-			.header	{
-				height: 7em;
+			.header {
+				width: 450px!important;
 			}
 
 			.header-phone-label {
-				font-size: 3em!important;
+				font-size: 40px!important;
 			}
 
 			.header-phone-number {
-				font-size: 2.7em!important;
+				font-size: 40px!important;
+			}
+
+			.table-content {
+				max-width: none!important;
+			}
+
+			.content-container-pad {
+				padding: 2em!important;
+			}
+
+			.content-container-head {
+				font-size: 40px!important;
+			}
+
+			.content-container-title {
+				font-size: 80px!important;
+				line-height: 80px!important;
+			}
+
+			.content-container-date {
+				font-size: 40px!important;
+			}
+
+			.content-container-time {
+				font-size: 40px!important;
+			}
+
+			.content-container-button-table {
+				max-width: 512px!important;
+			}
+
+			.content-container-button {
+				padding-top: 2em!important;
+				padding-bottom: 2em!important;
+			}
+
+			.content-container-link {
+				font-size: 40px!important;
+			}
+
+			.info-pad {
+				padding: 1em!important;
+			}
+
+			.info-main {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.info-link {
+				font-size: 40px!important;
+			}
+
+			.info-footer {
+				font-size: 40px!important;
+				line-height: 40px!important;
+			}
+
+			.nav-item {
+				font-size: 30px!important;
+			}
+
+			.ref-img {
+				width: 65px!important;
+			}
+
+			.ref-link {
+				font-size: 35px!important;
+			}
+
+			.footer-text {
+				font-size: 25px!important;
+				line-height: 25px!important;
+			}
+
+			.footer-img {
+				width: 25px!important;
+			}
+
+			html, body {
+				margin: 0!important;
+			}
+
+			.w-320 {
+				display: block!important;
 			}
 		}
+
 	</style>
-	<body style="margin: 0px; border: 0px;">
-		<table style="width: 100%;  border: 0px; border-spacing: 0px;">
+	<body style="margin: 0px; padding: 0; border: 0px;">
+		<table cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px;">
 			<tr style="width: 100%;">
-				<td align="center">
-					<table style="width: 100%; background: transparent; max-width: 1024px; border: 0px; border-spacing: 0px;">
+				<td class="table-position" align="center">
+					<table class="main-body" style="width: 100%; background: transparent; max-width: 1024px; border: 0px; border-spacing: 0px;">
 						<tr style="background: #373636;">
 							<td>
 								<table style="width: 100%;">
@@ -163,12 +886,12 @@
 											<table style="width: 100%; border: 0px;">
 												<tr>
 													<td style="text-align: right; padding-bottom: 4px;">
-														<p class="header-phone-label" style="color: #5CB5DB; font-size: 15.5px; font-family: 'Verdana'; font-style: normal; margin: 0px; text-decoration: none;">Многоканальный телефон</p>
+														<p class="header-phone-label" style="font-size: 15.5px; font-family: 'Verdana'; font-style: normal; margin: 0px; color: #5CB5DB;">Многоканальный телефон</p>
 													</td>
 												</tr>
 												<tr>
 													<td style="text-align: right;">
-														<a class="header-phone-number" href="tel:+74959844100" style="text-decoration: none; color: white; font-size: 14px; font-family: 'Verdana'; font-style: normal;">+7 (495) 984-41-00</a>
+														<a class="header-phone-number" style="font-size: 14px; font-family: 'Verdana'; font-style: normal; text-decoration: none; color: white;" href="tel:+74959844100" style="">+7 (495) 984-41-00</a>
 													</td>
 												</tr>
 											</table>
@@ -177,41 +900,41 @@
 								</table>
 							</td>
 						</tr>
-						<tr style="background: white; ">
+						<tr style="background: white;">
 							<td>
 								<table style="width: 100%; border: 0px; border-spacing: 0px;">
 									<tr style="background: url('https://fluid-line.ru/assets/mailing/vebinar/Rectangle.png') no-repeat; -moz-background-size: 100%; -webkit-background-size: 100vw; -o-background-size: 100%; background-size: 100%;">
 										<td align="center" style=" padding: 2vw; padding-top: 1.5em;">
-											<table style="width: 100%; max-width: 256px; border: 0px; border-spacing: 0px;">
-												<tr style="">
-													<td style="">
-														<table style="background: #373636;  padding: 2vw; border: 0px; border-spacing: 0px;">
+											<table class="table-content" style="width: 100%; max-width: 256px; border: 0px; border-spacing: 0px;">
+												<tr>
+													<td align="center">
+														<table class="table-content-container" style="padding: 2vw; border: 0px; border-spacing: 0px;background: #373636;">
 															<tr>
-																<td style="padding: 1.5em;">
-																	<span style="color: #5CB5DB; font-size: 1.2em; font-weight: 500; font-family: 'Verdana'; font-style: normal;">Вебинар</span>
+																<td class="content-container-pad" style="padding: 1.5em;">
+																	<span class="content-container-head" style="color: #5CB5DB; font-size: 1.2em; font-weight: 500; font-family: 'Verdana'; font-style: normal;">Вебинар</span>
 																</td>
 															</tr>
 															<tr>
-																<td style="padding: 1.5em;">
-																	<span style="color: white; font-size: 32px; font-style: normal; line-height: 37px; font-size: 2em; font-weight: 700; letter-spacing: -1px; font-family: 'Verdana';">Альтернативные стандарты фитингов</span>
+																<td class="content-container-pad" style="padding: 1.5em;">
+																	<span class="content-container-title" style="color: white; font-size: 32px; font-style: normal; line-height: 37px; font-size: 2em; font-weight: 700; letter-spacing: -1px; font-family: 'Verdana';">Альтернативные стандарты фитингов</span>
 																</td>
 															</tr>
 															<tr>
-																<td style="padding: 1.5em; padding-bottom: 0px;">
-																	<span style="color: white; font-size: 1em; font-style: normal; font-family: 'Verdana';">Дата и время:</span>
+																<td class="content-container-pad" style="padding: 1.5em; padding-bottom: 0px;">
+																	<span class="content-container-date" style="color: white; font-size: 1em; font-style: normal; font-family: 'Verdana';">Дата и время:</span>
 																</td>
 															</tr>
 															<tr>
-																<td style="padding: 1.5em; padding-top: 0px;">
-																	<span style="color: white; font-weight: 400; font-size: 1.2em; font-style: normal; font-family: 'Verdana';">8 июня 2022 в 11:00</span>
+																<td class="content-container-pad" style="padding: 1.5em; padding-top: 0px;">
+																	<span class="content-container-time" style="color: white; font-weight: 400; font-size: 1.2em; font-style: normal; font-family: 'Verdana';">8 июня 2022 в 11:00</span>
 																</td>
 															</tr>
 															<tr>
-																<td>
-																	<table style="background: #373636; width: 100%; padding: 1.5em;  border: 0px; border-spacing: 0px;">
-																		<tr style="width: 100%; display: inline-block; ">
-																			<td align="center" style="width: 100%; display: block; background: #0089C3; border-radius: 8px; padding-top: 1em; padding-bottom: 1em;">
-																				<a href="https://fluid-line.ru/" style="color: white; font-size: 1em;  background: #0089C3; border-radius: 8px; text-decoration: none; font-weight: 700; line-height: 19px; font-family: 'Verdana';">Начать просмотр</a>
+																<td class="content-container-pad" style="padding: 1.5em;">
+																	<table class="content-container-button-table" style="width: 100%; max-width: 256px;" align="center">
+																		<tr>
+																			<td class="content-container-button" style="background: #0089C3; border-radius: 8px; padding-top: 1em; padding-bottom: 1em; text-align: center;">
+																				<a href="https://fluid-line.ru/" class="content-container-link" style="font-size: 1em; border-radius: 8px; font-weight: 700; line-height: 19px; font-family: 'Verdana';background: #0089C3; color: white; text-decoration: none; ">Начать просмотр</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -234,33 +957,33 @@
 										<td style="width: 100%; padding: 2vw; text-align: center; ">
 											<table style="width: 100%; border: 0px; border-spacing: 0px; text-align: center;">
 												<tr>
-													<td style="padding: .5em;">
-														<span class="hello" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Здравствуйте!</span>
+													<td class="info-pad" style="padding: .5em;">
+														<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Здравствуйте!</span>
 													</td>
 												</tr>
 												<tr>
-													<td style="padding: .5em; padding-bottom: 0px;">
-														<span style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Сегодня состоится Вебинар</span>
+													<td  class="info-pad" style="padding: .5em; padding-bottom: 0px;">
+														<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Сегодня состоится Вебинар</span>
 													</td>
 												</tr>
 												<tr>
-													<td style="padding: .5em; padding-top: 0px;">
-														<span style="font-family: 'Verdana'; font-style: normal; font-weight: bold; font-size: 14px; line-height: 17px;">"Альтернативные стандарты фитингов".</span>
+													<td  class="info-pad" style="padding: .5em; padding-top: 0px;">
+														<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-size: 14px; line-height: 17px; font-weight: bold;">"Альтернативные стандарты фитингов".</span>
 													</td>
 												</tr>
 												<tr>
-													<td style="padding: .5em; display: inline-block;">
-														<span style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Трансляция доступна</span>
+													<td class="info-pad" style="padding: .5em;">
+														<span  class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Трансляция доступна</span>
 													</td>
 												</tr>
 												<tr>
-													<td style="padding: .5em; display: inline-block;">
-														<a href="https://fluid-line.ru/" style="color: white; font-size: 14px; padding: .5em; background: #0089C3; border-radius: 8px; text-decoration: none; font-family: 'Verdana';">по ссылке</a>
+													<td class="info-pad" style="padding: .5em;">
+														<a href="https://fluid-line.ru/" class="info-link" style="font-size: 14px;  border-radius: 8px;  font-family: 'Verdana'; color: white; text-decoration: none; padding: .5em; background: #0089C3;">по ссылке</a>
 													</td>
 												</tr>
 												<tr>
-													<td style="padding: .5em;">
-														<span style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Не пропустите!</span>
+													<td  class="info-pad" style="padding: .5em;" >
+														<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Не пропустите!</span>
 													</td>
 												</tr>
 											</table>
@@ -275,13 +998,11 @@
 									<tr style="display: inline-block; width: 90%; padding-left: 5%; padding-right: 5%;">
 										<td style="display: block; width: 100%;">
 											<table style="width: 100%; border: 0px; border-spacing: 0px;">
-												<tr style="display: inline-block; width: 2vw;"><td><a href=""></a></td></tr>
-												<tr style="display: inline-block; width: 100%;">
-													<td style="display: block; width: 100%; text-align: center;">
-														<p style=" font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 14px; color: #7D7D7D;">Вебинар 08 июня в 11:00 “Альтернативные стандарты фитингов” (другие линейки Hy-lok соединителей и где они применяются. Резьбовые, приварные, на чистые среды, под шланги, на вакуум и др.)</p>
+												<tr style="width: 100%;">
+													<td align="center" style="display: block; width: 100%; text-align: center;">
+														<p class="info-footer" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 14px; color: #7D7D7D;">Вебинар 08 июня в 11:00 “Альтернативные стандарты фитингов” (другие линейки Hy-lok соединителей и где они применяются. Резьбовые, приварные, на чистые среды, под шланги, на вакуум и др.)</p>
 													</td>
 												</tr>
-												<tr style="display: inline-block; width: 2vw;"><td><a href=""></a></td></tr>
 											</table>
 										</td>
 									</tr>
@@ -293,16 +1014,16 @@
 								<table style="width: 100%; border: 0px; border-spacing: 0px;  padding-bottom: 6%;">
 									<tr>
 										<td style="text-align: center;">
-											<a href="https://fluid-line.ru/" style="color: white; text-decoration: none; font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';">Новости</a>
+											<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Новости</a>
 										</td>
 										<td style="text-align: center;">
-											<a href="https://fluid-line.ru/" style="color: white; text-decoration: none; font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';">Продукция</a>
+											<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Продукция</a>
 										</td>
 										<td style="text-align: center;">
-											<a href="https://fluid-line.ru/" style="color: white; text-decoration: none; font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';">О компании</a>
+											<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">О компании</a>
 										</td>
 										<td style="text-align: center;">
-											<a href="https://fluid-line.ru/" style="color: white; text-decoration: none; font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';">Сертификаты</a>
+											<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Сертификаты</a>
 										</td>
 									</tr>
 								</table>
@@ -316,12 +1037,12 @@
 											<table style="border: 0px; border-spacing: 0px;">
 												<tr>
 													<td>
-														<a style="padding-right: 1vw;" href="tel:+74959844100">
-															<img style="width: 1.5em; padding-right: 1vw;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_call.png">
+														<a style="padding-right: 1vw; color: white; text-decoration: none;" href="tel:+74959844100">
+															<img class="ref-img" style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_call.png">
 														</a>
 													</td>
 													<td>
-														<a style="padding-left: 1em; font-size: 13px; color: white; text-decoration: none; white-space: nowrap; font-family: 'Verdana';" href="tel:+74959844100">
+														<a class="ref-link" style="padding-left: 1em; font-size: 13px;  white-space: nowrap; font-family: 'Verdana'; color: white; text-decoration: none;" href="tel:+74959844100">
 															+7 (495) 984-41-00
 														</a>
 													</td>
@@ -332,12 +1053,12 @@
 											<table style="border: 0px; border-spacing: 0px;">
 												<tr>
 													<td>
-														<a style="padding-right: 1vw;" href="tel:+74959844100">
-															<img style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_mail.png">
+														<a style="padding-right: 1vw; color: white; text-decoration: none;" href="tel:+74959844100">
+															<img class="ref-img" style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_mail.png">
 														</a>
 													</td>
 													<td>
-														<a style="padding-left: 1em; font-size: 13px; color: white; text-decoration: none;  white-space: nowrap; font-family: 'Verdana';" href="mailto:mail@fluid-line.ru">
+														<a  class="ref-link" style="padding-left: 1em; font-size: 13px;  white-space: nowrap; font-family: 'Verdana'; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
 															mail@fluid-line.ru
 														</a>
 													</td>
@@ -348,12 +1069,12 @@
 											<table style="border: 0px; border-spacing: 0px;">
 												<tr>
 													<td>
-														<a style="padding-right: 1vw;" href="tel:+74959844100">
-															<img style="width: 1.5em; " src="https://fluid-line.ru/assets/mailing/vebinar/vector_point.png">
+														<a style="padding-right: 1vw; color: white; text-decoration: none;" href="tel:+74959844100">
+															<img class="ref-img" style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_point.png">
 														</a>
 													</td>
 													<td style="">
-														<a style="padding-left: 1em; font-size: 13px; color: white; text-decoration: none;  white-space: nowrap; font-family: 'Verdana';" href="https://fluid-line.ru/">
+														<a class="ref-link" style="padding-left: 1em; font-size: 13px;  white-space: nowrap; font-family: 'Verdana'; color: white; text-decoration: none;"   href="https://fluid-line.ru/">
 															Москва, ул.Большая Cеменовская, д.49
 														</a>
 													</td>
@@ -371,13 +1092,13 @@
 						</tr>
 						<tr style="background: #373636;">
 							<td>
-								<p style="margin: 0; padding-left: 1em; padding-right: 1em; color: #888888; font-size: 12px; line-height: 12px;  font-family: 'Verdana';">Вы получили это письмо, потому что подписаны на еженедельную рассылку Fluid-Line.</p>
+								<p class="footer-text" style="margin: 0; padding-left: 1em; padding-right: 1em; color: #888888; font-size: 12px; line-height: 12px; font-family: 'Verdana';">Вы получили это письмо, потому что подписаны на еженедельную рассылку Fluid-Line.</p>
 							</td>
 						</tr>
 						<tr style="background: #373636; padding-left: 2%; padding-right: 2%;">
 							<td>
-								<a href="https://fluid-line.ru/" style="color: #888888; font-size: 12px; font-family: 'Verdana'; text-decoration: none; padding-left: 1em; padding-right: 1em;">
-									<img style="color: #888888; width: 14px; padding-right: 4px; " src="https://fluid-line.ru/assets/mailing/vebinar/unsub.png">Отписаться
+								<a href="https://fluid-line.ru/" class="footer-text" style="margin: 0; padding-left: 1em; padding-right: 1em; color: #888888; font-size: 12px; line-height: 12px; font-family: 'Verdana'; text-decoration: none;">
+									<img class="footer-img" style="width: 14px; color: #888888;  padding-right: 4px; " src="https://fluid-line.ru/assets/mailing/vebinar/unsub.png">Отписаться
 								</a>
 								<p class="w-320" style="display: none;">320</p>
 								<p class="w-375" style="display: none;">375</p>
