@@ -11,25 +11,31 @@
 		}
 
 		html, body {
-			width: 100%;
+			min-width: 320px;
+			width: 100%!important;
 			height: 100%;
 			margin: 0!important;
 			background: transparent;
 		}
 
 		@media screen {
-			.full-table {
-				display: none!important;
+			.header {
+				min-width: 160px;
+				width: 100%;
+				max-width: 160px;
+				min-height: 40px;
 			}
 
-			.small-table {
+			.full-table {
 				display: table!important;
 			}
+
+			
 		}
 
 		@media (max-width: 768px) {
 			body {
-				width: 768px!important;
+				/*width: 768px!important;*/
 			}
 
 			.small-table {
@@ -37,7 +43,7 @@
 			}
 
 			.header {
-				width: 210px!important;
+				/*width: 210px!important;*/
 			}
 
 			.header-phone-number {
@@ -53,8 +59,8 @@
 			}
 
 			.content-container-title {
-				font-size: 35px!important;
-				line-height: 35px!important;
+				font-size: 25px!important;
+				line-height: 30px!important;
 			}
 
 			.content-container-date {
@@ -86,7 +92,7 @@
 
 		@media (max-width: 425px) {
 			body {
-				width: 425px!important;
+				/*width: 425px!important;*/
 			}
 
 			.medium-nav {
@@ -98,7 +104,7 @@
 			}
 
 			.header {
-				width: 190px!important;
+				/*width: 190px!important;*/
 			}
 
 			.header-phone-number {
@@ -114,8 +120,8 @@
 			}
 
 			.content-container-title {
-				font-size: 30px!important;
-				line-height: 30px!important;
+				/*font-size: 30px!important;*/
+				/*line-height: 30px!important;*/
 			}
 
 			.content-container-date {
@@ -147,7 +153,7 @@
 
 		@media (max-width: 375px) {
 			body {
-				width: 375px!important;
+				/*width: 375px!important;*/
 			}
 
 			.mini-nav {
@@ -163,7 +169,7 @@
 			}
 
 			.header {
-				width: 170px!important;
+				/*width: 170px!important;*/
 			}
 
 			.header-phone-number {
@@ -179,8 +185,8 @@
 			}
 
 			.content-container-title {
-				font-size: 25px!important;
-				line-height: 30px!important;
+				/*font-size: 25px!important;*/
+				/*line-height: 30px!important;*/
 			}
 
 			.content-container-date {
@@ -209,7 +215,7 @@
 
 		@media (max-width: 320px) {
 			body {
-				width: 320px!important;
+				/*width: 320px!important;*/
 			}
 
 			.mini-nav {
@@ -221,7 +227,7 @@
 			}
 
 			.header {
-				width: 150px!important;
+				/*width: 100%!important;*/
 			}
 
 			.header-phone-number {
@@ -237,8 +243,8 @@
 			}
 
 			.content-container-title {
-				font-size: 25px!important;
-				line-height: 30px!important;
+				/*font-size: 25px!important;*/
+				/*line-height: 30px!important;*/
 			}
 
 			.content-container-date {
@@ -275,7 +281,7 @@
 					<table cellpadding="0" cellspacing="0" style="width: 100%;">
 						<tr>
 							<td align="left" style="padding: .5em;">
-								<img class="header" src="https://fluid-line.ru/assets/mailing/vebinar/header.png">
+								<img class="header" alt="https://fluid-line.ru/" src="https://fluid-line.ru/assets/mailing/vebinar/header.png">
 							</td>
 							<td align="right">
 								<table>
@@ -350,7 +356,7 @@
 		<table align="center" style="width: 100%; background: white; max-width: 1024px;">
 			<tr>
 				<td>
-					<table cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; text-align: center;">
+					<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; text-align: center;">
 						<tr>
 							<td class="info-pad" style="padding: .5em;">
 								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Здравствуйте!</span>
@@ -462,11 +468,11 @@
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="full-table" style="background: #373636; width: 100%; max-width: 1024px; padding-right: 1em; padding-left: 2em;">
+		<table align="center" cellpadding="0" cellspacing="0" align="center" class="full-table" style="background: #373636; width: 100%; max-width: 1024px;">
 			<tr>
 				<td>
 					<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; padding: 2em; text-align: left; border: 0px; border-spacing: 0px;">
-						<tr style=" width: 100%;">
+						<tr style=" display: inline-block; ">
 							<td class="ref-line" style="display: inline-block; padding-right: 8em;">
 								<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; padding-bottom: 1em;">
 									<tr>
@@ -477,12 +483,14 @@
 										</td>
 										<td align="left">
 											<a class="ref-link" style=" font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="tel:+74959844100">
-												+7 (495) 984-41-00
+												+7 (495) 984-41-001
 											</a>
 										</td>
 									</tr>
 								</table>
 							</td>
+						</tr>
+						<tr style="display: inline-block;">
 							<td class="ref-line" style="display: inline-block; padding-right: 8em;">
 								<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; padding-bottom: 1em;">
 									<tr>
@@ -499,94 +507,12 @@
 									</tr>
 								</table>
 							</td>
+						</tr>
+						<tr style="display: inline-block;">
 							<td class="ref-line" style="display: inline-block;">
 								<table  cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; padding-bottom: 1em;">
 									<tr>
 										<td align="right" class="ref-img" style="padding-right: 1em;">
-											<a style=" color: white; text-decoration: none;" href="https://fluid-line.ru/">
-												<img class="ref-img" style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_point.png">
-											</a>
-										</td>
-										<td align="left" style="">
-											<a class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;"   href="https://fluid-line.ru/">
-												Москва, ул.Большая Cеменовская, д.49
-											</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="small-table" style="display: none; background: #373636; width: 100%; max-width: 1024px;">
-			<tr>
-				<td class="nav-root" style="padding-top: 2em;">
-					<table cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px;  padding-bottom: 1em;">
-						<tr>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Новости</a>
-							</td>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Продукция</a>
-							</td>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">О компании</a>
-							</td>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Сертификаты</a>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="small-table" style="width: 100%; max-width: 1024px; display: none; background: #373636; padding: 2em; padding-right: 1em; padding-left: 2em;">
-			<tr  >
-				<td>
-					<table align="left" cellpadding="0" cellspacing="0" style=" padding: 2em; padding-left: 3em; padding-right: 1em; text-align: left; border: 0px; border-spacing: 0px;">
-						<tr style=" width: 100%;">
-							<td class="ref-line">
-								<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; padding-bottom: 2em;">
-									<tr>
-										<td align="left" class="ref-img" style="padding-right: 1em;">
-											<a style="; color: white; text-decoration: none;" href="tel:+74959844100">
-												<img class="ref-img" style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_call.png">
-											</a>
-										</td>
-										<td align="left">
-											<a class="ref-link" style=" font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="tel:+74959844100">
-												+7 (495) 984-41-00
-											</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="ref-line">
-								<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; padding-bottom: 2em;">
-									<tr>
-										<td align="left" class="ref-img" style="padding-right: 1em;">
-											<a style="color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
-												<img class="ref-img" style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_mail.png">
-											</a>
-										</td>
-										<td align="left">
-											<a  class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
-												mail@fluid-line.ru
-											</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="ref-line" style="text-align: center;">
-								<table  cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; padding-bottom: 2em;">
-									<tr>
-										<td align="left" class="ref-img" style="padding-right: 1em;">
 											<a style=" color: white; text-decoration: none;" href="https://fluid-line.ru/">
 												<img class="ref-img" style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_point.png">
 											</a>

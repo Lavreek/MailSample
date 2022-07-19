@@ -1,3 +1,3 @@
 <?php
-	include __DIR__."/tablev4.html";
+	include __DIR__."/Письмо по вебинарам.html";
 ?>
