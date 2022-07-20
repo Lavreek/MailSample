@@ -6,18 +6,15 @@
 		<meta name="x-apple-disable-message-reformatting">
 	</head>
 	<style type="text/css">
-	    html, body, table, tbody, tr, td {
-			border: none!important;
-		}
-
-		html, body, tr, td, p, span, a {
-			margin: 0!important;
+	    table {
+			border: 0px!important;
 		}
 
 		html, body {
 			min-width: 320px;
 			width: 100%!important;
 			height: 100%;
+			margin: 0!important;
 			background: transparent;
 		}
 
@@ -29,20 +26,20 @@
 				min-height: 40px;
 			}
 
-			.table-max-width {
-				max-width: 768px;
-			}
-
 			.full-table {
 				display: table!important;
-			}
-
-			.content-container-pad {
-				transition: 1s;
 			}
 		}
 
 		@media (max-width: 768px) {
+			body {
+				/*width: 768px!important;*/
+			}
+
+			.header {
+				/*width: 210px!important;*/
+			}
+
 			.header-phone-number {
 				font-size: 13px!important;
 			}
@@ -52,12 +49,12 @@
 			}
 
 			.content-container-head {
-				font-size: 1.2em!important;
+				font-size: 1.5em!important;
 			}
 
 			.content-container-title {
-				font-size: 32px!important;
-				line-height: 37px!important;
+				font-size: 25px!important;
+				line-height: 30px!important;
 			}
 
 			.content-container-date {
@@ -73,7 +70,7 @@
 			}
 
 			.content-container-link {
-				font-size: 1em!important;
+				font-size: .8em!important;
 			}
 
 			.footer-text {
@@ -88,6 +85,10 @@
 		}
 
 		@media (max-width: 425px) {
+			body {
+				/*width: 425px!important;*/
+			}
+			
 			.full-table {
 				display: none!important;
 			}
@@ -100,6 +101,10 @@
 				display: none!important;
 			}
 
+			.header {
+				/*width: 190px!important;*/
+			}
+
 			.header-phone-number {
 				font-size: 13px!important;
 			}
@@ -109,34 +114,28 @@
 			}
 
 			.content-container-head {
-				transition: 1s;
 				font-size: 1em!important;
 			}
 
 			.content-container-title {
-				transition: 1s;
-				font-size: 25px!important;
-				line-height: 30px!important;
+				/*font-size: 30px!important;*/
+				/*line-height: 30px!important;*/
 			}
 
 			.content-container-date {
-				transition: 1s;
-				font-size: .9em!important;
+				font-size: 8px;
 			}
 
 			.content-container-time {
-				transition: 1s;
 				font-size: 1em!important;
 			}
 			
 			.content-container-pad {
-				transition: 1s;
-				padding: 1.2em!important;
+				padding: 1.3em!important;
 			}
 
 			.content-container-link {
-				transition: 1s;
-				font-size: .9em!important;
+				font-size: .8em!important;
 			}
 
 			.footer-text {
@@ -148,23 +147,73 @@
 			.contacts {
 				font-size: 14px!important;
 			}
-
-			.info-main {
-				transition: 1s;
-				font-size: 14px!important;
-			}
-
-			.info-link {
-				transition: 1s;
-				font-size: 14px!important;	
-			}
-
-			.nav-item {
-				transition: 1s;
-			}
 		}
 
 		@media (max-width: 375px) {
+			body {
+				/*width: 375px!important;*/
+			}
+
+			.mini-nav {
+				display: table!important; 
+			}
+
+			
+
+			.small-table {
+				display: none!important;
+			}
+
+			.header {
+				/*width: 170px!important;*/
+			}
+
+			.header-phone-number {
+				font-size: 13px!important;
+			}
+
+			.header-phone-label {
+				font-size: 14.5px!important;
+			}
+
+			.content-container-head {
+				font-size: 1em!important;
+			}
+
+			.content-container-title {
+				/*font-size: 25px!important;*/
+				/*line-height: 30px!important;*/
+			}
+
+			.content-container-date {
+				font-size: 8px;
+			}
+
+			.content-container-time {
+				font-size: 1em!important;
+			}
+			
+			.content-container-pad {
+				padding: 1em!important;
+			}
+
+			.content-container-link {
+				font-size: .8em!important;
+			}
+
+			.footer-text {
+				font-size: 10px!important;
+			}
+			.footer-img {
+				width: 10px!important;
+			}
+		}
+
+		@media (max-width: 320px) {
+			body {
+				/*width: 320px!important;*/
+			}
+
 			.mini-nav {
 				display: table!important; 
 			}
@@ -173,13 +222,25 @@
 				display: none!important;
 			}
 
+			.header {
+				/*width: 100%!important;*/
+			}
+
 			.header-phone-number {
-				transition: 1s;
 				font-size: 12px!important;
 			}
 
 			.header-phone-label {
 				font-size: 14.5px!important;
+			}
+
+			.content-container-head {
+				font-size: 1em!important;
+			}
+
+			.content-container-title {
+				/*font-size: 25px!important;*/
+				/*line-height: 30px!important;*/
 			}
 
 			.content-container-date {
@@ -205,50 +266,12 @@
 				width: 10px!important;
 			}
 			.ref-link {
-				transition: 1s;
 				font-size: 12px!important;
-			}
-		}
-
-		@media (max-width: 320px) {
-			.mini-nav {
-				display: table!important; 
-			}
-
-			.small-table {
-				display: none!important;
-			}
-
-			.header-phone-label {
-				font-size: 14.5px!important;
-			}
-
-			.content-container-date {
-				font-size: 8px;
-			}
-
-			.content-container-time {
-				font-size: 1em!important;
-			}
-			
-			.content-container-pad {
-				padding: 1em!important;
-			}
-
-			.content-container-link {
-				font-size: .8em!important;
-			}
-
-			.footer-text {
-				font-size: 10px!important;
-			}
-			.footer-img {
-				width: 10px!important;
 			}
 		}
 	</style>
 	<body style="margin: 0; padding: 0; border: 0; background: transparent;">
-		<table cellpadding="0" cellspacing="0" align="center" class="table-max-width" style="width: 100%; background: #373636; max-width: 768px;">
+		<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; background: #373636; max-width: 1024px;">
 			<tr>
 				<td>
 					<table cellpadding="0" cellspacing="0" style="width: 100%;">
@@ -275,34 +298,34 @@
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="main-body table-max-width" style="width: 100%; background: white; max-width: 320px; max-width: 768px; padding-top: .5em; padding-bottom: .5em;">
-			<tr style="background: url('https://fluid-line.ru/assets/mailing/vebinar/8-06/Rectangle.png') no-repeat; -moz-background-size: 100%; -webkit-background-size: 100vw; -o-background-size: 100%; background-size: 100%;">
+		<table align="center" cellpadding="0" cellspacing="0" class="main-body" style="width: 100%; background: white; max-width: 1024px; padding-top: .5em; padding-bottom: .5em;">
+			<tr style="background: url('https://fluid-line.ru/assets/mailing/vebinar/Rectangle.png') no-repeat; -moz-background-size: 100%; -webkit-background-size: 100vw; -o-background-size: 100%; background-size: 100%;">
 				<td>
 					<table cellpadding="0" cellspacing="0" style="width: 100%;">
 						<tr>
 							<td>
-								<table align="center" cellpadding="0" cellspacing="0" class="table-content" style="padding-top: 1em; width: 100%; max-width: 320px; border: 0px; border-spacing: 0px;">
+								<table align="center" cellpadding="0" cellspacing="0" class="table-content" style="padding-top: 1em; width: 100%; max-width: 256px; border: 0px; border-spacing: 0px;">
 									<tr>
 										<td align="center">
 											<table cellpadding="0" cellspacing="0" class="table-content-container" style="background: #373636;">
 												<tr>
 													<td class="content-container-pad" style="padding: 1.5em;">
-														<span class="content-container-head" style="color: #5CB5DB; font-size: 1.2em; font-weight: 500; font-family: 'Verdana'; font-style: normal; transition: 1s;">Вебинар</span>
+														<span class="content-container-head" style="color: #5CB5DB; font-size: 1.2em; font-weight: 500; font-family: 'Verdana'; font-style: normal;">Вебинар</span>
 													</td>
 												</tr>
 												<tr>
 													<td class="content-container-pad" style="padding: 1.5em;">
-														<span class="content-container-title" style="color: white; font-size: 32px; font-style: normal; line-height: 37px;  font-weight: 700; letter-spacing: -1px; font-family: 'Verdana'; transition: 1s;">Шаровые краны</span>
+														<span class="content-container-title" style="color: white; font-size: 32px; font-style: normal; line-height: 37px;  font-weight: 700; letter-spacing: -1px; font-family: 'Verdana';">Альтернативные стандарты фитингов</span>
 													</td>
 												</tr>
 												<tr>
 													<td class="content-container-pad" style="padding: 1.5em; padding-bottom: 0px!important;">
-														<span class="content-container-date" style="color: white; font-size: 1em; font-style: normal; font-family: 'Verdana'; transition: 1s;">Дата и время:</span>
+														<span class="content-container-date" style="color: white; font-size: 1em; font-style: normal; font-family: 'Verdana';">Дата и время:</span>
 													</td>
 												</tr>
 												<tr>
 													<td class="content-container-pad" style="padding: 1.5em; padding-top: 0px!important;">
-														<span class="content-container-time" style="color: white; font-weight: 400; font-size: 1.2em; font-style: normal; font-family: 'Verdana'; transition: 1s;">27 июля 2022 в 11:00</span>
+														<span class="content-container-time" style="color: white; font-weight: 400; font-size: 1.2em; font-style: normal; font-family: 'Verdana';">8 июня 2022 в 11:00</span>
 													</td>
 												</tr>
 												<tr>
@@ -310,7 +333,7 @@
 														<table cellpadding="0" cellspacing="0" class="content-container-button-table" style="width: 100%; max-width: 256px;" align="center">
 															<tr>
 																<td class="content-container-button" style="background: #0089C3; border-radius: 8px; padding-top: 1em; padding-bottom: 1em; text-align: center;">
-																	<a href="https://fluid-line.ru/" class="content-container-link" style="font-size: 1em; border-radius: 8px; font-weight: 700; line-height: 19px; font-family: 'Verdana';background: #0089C3; color: white; text-decoration: none; transition: 1s;	">Начать просмотр</a>
+																	<a href="https://fluid-line.ru/" class="content-container-link" style="font-size: 1em; border-radius: 8px; font-weight: 700; line-height: 19px; font-family: 'Verdana';background: #0089C3; color: white; text-decoration: none; ">Начать просмотр</a>
 																</td>
 															</tr>
 														</table>
@@ -326,45 +349,45 @@
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="info-body table-max-width" style="width: 100%; background: white; max-width: 768px;">
+		<table align="center" style="width: 100%; background: white; max-width: 1024px;">
 			<tr>
 				<td>
 					<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; text-align: center;">
 						<tr>
 							<td class="info-pad" style="padding: .5em;">
-								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 17px; line-height: 17px; transition: 1s;">Здравствуйте!</span>
+								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Здравствуйте!</span>
 							</td>
 						</tr>
 						<tr>
 							<td  class="info-pad" style="padding: .5em; padding-bottom: 0px;">
-								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 17px; line-height: 17px; transition: 1s;">Сегодня состоится Вебинар</span>
+								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Сегодня состоится Вебинар</span>
 							</td>
 						</tr>
 						<tr>
 							<td  class="info-pad" style="padding: .5em; padding-top: 0px;">
-								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-size: 17px; line-height: 17px; font-weight: 700; transition: 1s;">"Шаровые краны".</span>
+								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-size: 14px; line-height: 17px; font-weight: bold;">"Альтернативные стандарты фитингов".</span>
 							</td>
 						</tr>
 						<tr>
 							<td class="info-pad" style="padding: .5em;">
-								<span  class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 17px; line-height: 17px; transition: 1s;">Трансляция доступна</span>
+								<span  class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Трансляция доступна</span>
 							</td>
 						</tr>
 						<tr>
 							<td class="info-pad" style="padding: .5em;">
-								<a href="https://fluid-line.ru/" class="info-link" style="font-size: 17px;  border-radius: 8px;  font-family: 'Verdana'; color: white; text-decoration: none; padding: .5em; background: #0089C3; transition: 1s;">по ссылке</a>
+								<a href="https://fluid-line.ru/" class="info-link" style="font-size: 14px;  border-radius: 8px;  font-family: 'Verdana'; color: white; text-decoration: none; padding: .5em; background: #0089C3;">по ссылке</a>
 							</td>
 						</tr>
 						<tr>
 							<td  class="info-pad" style="padding: .5em;" >
-								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 17px; line-height: 17px; transition: 1s;">Не пропустите!</span>
+								<span class="info-main" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Не пропустите!</span>
 							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="table-max-width" style="background: white; max-width: 768px;">
+		<table cellpadding="0" cellspacing="0" align="center" style="background: white; max-width: 1024px;">
 			<tr>
 				<td>
 					<table cellpadding="0" cellspacing="0" style="width: 100%;">
@@ -373,7 +396,7 @@
 								<table cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px;">
 									<tr style="width: 100%;">
 										<td align="center" style="display: block; width: 100%; text-align: center;">
-											<p class="info-footer" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 14px; color: #7D7D7D;">Вебинар 27 июля в 11:00 "Шаровые краны" (принципы работы, обзор серий Hy-Lok, A-flow, особенности эксплуатации)</p>
+											<p class="info-footer" style="font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 14px; color: #7D7D7D;">Вебинар 08 июня в 11:00 “Альтернативные стандарты фитингов” (другие линейки Hy-lok соединителей и где они применяются. Резьбовые, приварные, на чистые среды, под шланги, на вакуум и др.)</p>
 										</td>
 									</tr>
 								</table>
@@ -383,29 +406,65 @@
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="full-table table-max-width" style="background: #373636; width: 100%; max-width: 768px;">
+		<table cellpadding="0" cellspacing="0" align="center" class="medium-nav" style="display: none; background: #373636; width: 100%; max-width: 1024px;">
 			<tr>
-				<td class="nav-root" style="padding-top: 1.5em; padding-bottom: 1.5em;">
-					<table cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px;">
+				<td>
+					<table style="width: 100%; padding: 1em;">
 						<tr>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 14px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none; transition: 1s;">Новости</a>
-							</td>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 14px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none; transition: 1s;">Продукция</a>
-							</td>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 14px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none; transition: 1s;">О компании</a>
-							</td>
-							<td style="text-align: center;">
-								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 14px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none; transition: 1s;">Сертификаты</a>
+							<td >
+								<table style="width: 100%;">
+									<tr>
+										<td style="padding-bottom: .5em;">
+											<p>
+												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: white; font-family: 'Verdana'; text-decoration: none;">О компании</a>
+											</p>
+										</td>
+										<td style="padding-bottom: .5em;">
+											<p>
+												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Продукция</a>
+											</p>
+										</td>
+										<td style="padding-bottom: .5em;">
+											<p>
+												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Новости</a>
+											</p>
+										</td>
+										<td style="padding-bottom: .5em;">
+											<p>
+												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Сертификаты</a>
+											</p>
+										</td>
+									</tr>
+								</table>
 							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
-		<table  cellpadding="0" cellspacing="0" align="center" class="full-table table-max-width" style="background: #373636; width: 100%; max-width: 768px;">
+		<table cellpadding="0" cellspacing="0" align="center" class="full-table" style="background: #373636; width: 100%; max-width: 1024px;">
+			<tr>
+				<td class="nav-root" style="padding-top: 2em;">
+					<table cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px;  padding-bottom: 1em;">
+						<tr>
+							<td style="text-align: center;">
+								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Новости</a>
+							</td>
+							<td style="text-align: center;">
+								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Продукция</a>
+							</td>
+							<td style="text-align: center;">
+								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">О компании</a>
+							</td>
+							<td style="text-align: center;">
+								<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Сертификаты</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table align="center" cellpadding="0" cellspacing="0" align="center" class="full-table" style="background: #373636; width: 100%; max-width: 1024px;">
 			<tr>
 				<td>
 					<table align="center" cellpadding="0" cellspacing="0" style="width: 100%; padding: 2em; text-align: left; border: 0px; border-spacing: 0px;">
@@ -419,7 +478,7 @@
 											</a>
 										</td>
 										<td align="left">
-											<a class="ref-link" style=" font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none; transition: 1s;" href="tel:+74959844100">
+											<a class="ref-link" style=" font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="tel:+74959844100">
 												+7 (495) 984-41-00
 											</a>
 										</td>
@@ -437,7 +496,7 @@
 											</a>
 										</td>
 										<td align="left">
-											<a  class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none; transition: 1s;" href="mailto:mail@fluid-line.ru">
+											<a  class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
 												mail@fluid-line.ru
 											</a>
 										</td>
@@ -455,7 +514,7 @@
 											</a>
 										</td>
 										<td align="left" style="">
-											<a class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none; transition: 1s;" href="https://fluid-line.ru/">
+											<a class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;"   href="https://fluid-line.ru/">
 												Москва, ул.Большая Cеменовская, д.49
 											</a>
 										</td>
@@ -466,13 +525,66 @@
 					</table>
 				</td>
 			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" align="center" class="medium-nav" style="display: none; background: #373636; width: 100%; max-width: 1024px; padding-left: 1em;">
 			<tr>
 				<td>
-					<hr>
+					<table style="width: 100%; padding: 1em; padding-left: 0;">
+						<tr>
+							<td style="display: inline-block;">
+								<table>
+									<tr style="display: inline-block;">
+										<td>
+											<img class="ref-img" style="width: 1.5em; " src="https://fluid-line.ru/assets/mailing/vebinar/vector_call.png">
+										</td>
+									</tr>
+									<tr style="display: inline-block;">
+										<td>
+											<a class="contacts" style="color: white; text-decoration: none; display: inline-block; font-family: Verdana;" href="tel:+74959844100">
+												+7 (495) 984-41-00
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td style="display: inline-block;">
+								<table>
+									<tr style="display: inline-block;">
+										<td>
+											<img class="ref-img" style="width: 1.5em; " src="https://fluid-line.ru/assets/mailing/vebinar/vector_mail.png">
+										</td>
+									</tr>
+									<tr style="display: inline-block;">
+										<td>
+											<a class="contacts" style="color: white; text-decoration: none; display: inline-block; font-family: Verdana;" href="mailto:mail@fluid-line.ru">
+												mail@fluid-line.ru
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td style="display: inline-block;">
+								<table>
+									<tr style="display: inline-block;">
+										<td>
+											<img class="ref-img" style="width: 1.5em; " src="https://fluid-line.ru/assets/mailing/vebinar/vector_point.png">
+										</td>
+									</tr>
+									<tr style="display: inline-block;">
+										<td>
+											<a class="contacts" style="color: white; text-decoration: none; display: inline-block; font-family: Verdana;" href="https://fluid-line.ru/">
+												Москва, ул.Большая Cеменовская, д.49
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="mini-nav table-max-width" style="display: none; background: #373636; width: 100%; max-width: 768px;">
+		<table cellpadding="0" cellspacing="0" align="center" class="mini-nav" style="display: none; background: #373636; width: 100%; max-width: 1024px;">
 			<tr>
 				<td>
 					<table style="width: 100%;">
@@ -489,21 +601,21 @@
 									<tr>
 										<td style="padding-bottom: .5em;">
 											<p>
-												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 14px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Продукция</a>
+												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Продукция</a>
 											</p>
 										</td>
 									</tr>
 									<tr>
 										<td style="padding-bottom: .5em;">
 											<p>
-												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 14px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Новости</a>
+												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Новости</a>
 											</p>
 										</td>
 									</tr>
 									<tr>
 										<td style="padding-bottom: .5em;">
 											<p>
-												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 14px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Сертификаты</a>
+												<a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Сертификаты</a>
 											</p>
 										</td>
 									</tr>
@@ -514,7 +626,7 @@
 									<tr>
 										<td style="padding-bottom: .5em;">
 											<p>
-												<a class="ref-link" style=" font-size: 13px; font-family: 'Verdana'; color: white; text-decoration: none; transition: 1s;" href="tel:+74959844100">
+												<a class="ref-link" style=" font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="tel:+74959844100">
 													+7 (495) 984-41-00
 												</a>
 											</p>
@@ -523,7 +635,7 @@
 									<tr>
 										<td style="padding-bottom: .5em;">
 											<p>
-												<a  class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none; transition: 1s;" href="mailto:mail@fluid-line.ru">
+												<a  class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
 													mail@fluid-line.ru
 												</a>
 											</p>
@@ -532,7 +644,7 @@
 									<tr>
 										<td style="padding-bottom: .5em;">
 											<p>
-												<a class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none; transition: 1s;"   href="https://fluid-line.ru/">
+												<a class="ref-link" style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;"   href="https://fluid-line.ru/">
 													Москва, ул.Большая Cеменовская, д.49
 												</a>
 											</p>
@@ -544,13 +656,15 @@
 					</table>
 				</td>
 			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" align="center" style="background: #373636; width: 100%; max-width: 1024px;">
 			<tr>
 				<td>
 					<hr>
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0" align="center" class="table-max-width" style="background: #373636; width: 100%; max-width: 768px; border: 0;">
+		<table cellpadding="0" cellspacing="0" align="center" style="background: #373636; width: 100%; max-width: 1024px; border: 0;">
 			<tr style="border: 0;">
 				<td style="border: 0;">
 					<table style="border: 0; width: 100%;">
@@ -563,7 +677,7 @@
 				</td>
 			</tr>
 		</table>
-		<table cellpadding="0" cellspacing="0"align="center" class="table-max-width" style="background: #373636; width: 100%; border: 0; padding-bottom: 1em; max-width: 768px;">
+		<table align="center" style="background: #373636; width: 100%; border: 0; padding-bottom: 1em; max-width: 1024px;">
 			<tr style="border: 0;">
 				<td style="border: 0;">
 					<table style="border: 0; width: 100%;">
