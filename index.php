@@ -1,3 +1,3 @@
 <?php
-	include __DIR__."/mail.html";
+	include __DIR__."/opened.html";
 ?>
