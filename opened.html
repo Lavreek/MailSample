@@ -26,284 +26,463 @@
 			table {
 				width: 100%;
 			}
+
+			@media (max-width: 600px) {
+				.main-table {
+					min-width: 425px !important;
+				}
+
+				.mail-preview {
+					min-height: 244px !important;
+					max-height: 250px !important;
+				}
+
+				.mail-preview-padding {
+					min-width: 0 !important;
+					width: calc(-90px + 20vw) !important;
+					max-width: 30px !important;
+				}
+
+				.mail-preview-container-padding {
+					min-width: 19px !important;
+					max-width: 37px !important;
+				}
+
+				.mail-preview-text-padding-bottom {
+					min-height: 52px !important;
+					height: calc(-46px + 25vw) !important;
+					max-height: 104px !important;
+				}
+
+				.mail-logo-padding-top {
+					min-height: 28px !important;
+					max-height: 34px !important;
+				}
+
+				.mail-logo-padding-bottom {
+					min-height: 13px !important;
+					max-height: 14px !important;
+				}
+
+				.mail-text-padding {
+					min-width: 20px !important;
+					width: calc(-170px + 45vw) !important;
+					max-width: 92px !important;
+				}
+
+				.mail-map-text-padding-right {
+					min-width: 0px !important;
+					width: calc(-192px + 45vw) !important;
+					max-width: 68px !important;
+				}
+
+				.mail-footer-padding {
+					min-width: 20px !important;
+					width: calc(-98px + 29vw) !important; 
+					max-width: 67px !important;
+				}
+
+				.mail-contacts-phone, .mail-contacts-address, .mail-contacts-mail {
+					display: inline-block !important;
+				}
+
+				.mail-contacts-padding-bottom {
+					min-height: 0 !important;
+					height: calc(-100px + 10vw) !important;
+					max-height: 10px !important;
+				}
+			}
+
+			@media (max-width: 425px) {
+				.mail-map-container {
+					display: none !important;
+				}
+				
+				.mail-map-container-sm {
+					display: table !important;
+				}
+
+				.mail-preview {
+					background-image: url('https://fluid-line.ru/assets/mailing/almata/425-preview.png') !important;
+				}
+
+				.mail-map a img {
+					width: 383px !important;
+					height: 234px !important;
+				}
+
+				.mail-map-text-padding-left, .mail-map-text-padding-right {
+					min-width: 0px !important;
+					width: 0px !important;
+					max-width: 0px !important;
+				}
+				.mail-map-text {
+					margin: 20px;
+
+				}
+				.mail-delimiter {
+					width: 20px !important;
+				}
+			}
+
+			@media (max-width: 375px) {
+				body, .main-table {
+					min-width: 320px !important;
+				}
+				.mail-preview-text-padding-bottom {
+					min-height: 8px!important;
+					height: 8px !important;
+					max-height: 8px !important;
+				}
+				.mail-map-text {
+					padding: 20px;
+				}
+				.mail-map a img {
+					width: 300px !important;
+					height: 234px !important;
+				}
+				.mail-preview {
+					background-image: url('https://fluid-line.ru/assets/mailing/almata/320-preview.png') !important;
+				}
+			}
 		</style>
 	</head>
 	<body style="margin: 0; padding: 0; border: 0; background: none; min-width: 320px;">
-		<table align="center" width="100%" style="min-width: 600px; max-width: 600px; width: 100%; border: 0;">
-			<tr>
-				<td height="30px" style="min-height: 30px; height: 30px; max-height: 30px;">
-					<div height="30px" style="min-height: 30px; height: 30px; max-height: 30px;"></div>
-				</td>
-			</tr>
+		<table class="main-table" align="center" width="100%" style="min-width: 600px; max-width: 600px; width: 100%; border: 0;">
 			<tr>
 				<td>
-					<table width="100%" style="width: 100%;">
-						<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
-						<td height="250px" style="background-repeat: no-repeat; background-size: 100%; background-image: url('https://fluid-line.ru/assets/mailing/almata/preview.png'); min-height: 250px; height: 250px; max-height: 250px;">
-							<table width="100%" height="100%" style="width: 100%; height: 100%;">
-								<tr>
-									<td height="34px" style="min-height: 34px; height: 34px; max-height: 34px;">
-										<div height="34px" style="min-height: 34px; height: 34px; max-height: 34px;"></div>
-									</td>
-								</tr>
-								<tr>
-									<td width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
-									<td>
-										<a href="https://fluid-line.ru/">
-											<img src="https://fluid-line.ru/assets/mailing/almata/logo.png">
-										</a>
-									</td>
-									<td width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
-								</tr>
-								<tr>
-									<td height="13px" style="min-height: 13px; height: 13px; max-height: 13px;">
-										<div height="13px" style="min-height: 13px; height: 13px; max-height: 13px;"></div>
-									</td>
-								</tr>
-								<tr>
-									<td width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
-									<td>
-										<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 700; font-size: 32px; line-height: 37px; color: white;">Мы открыли<br> офис в Алматы</span>
-									</td>
-									<td width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
-								</tr>
-								<tr>
-									<td height="74px" style="min-height: 74px; height: 74px; max-height: 74px;">
-										<div height="74px" style="min-height: 74px; height: 74px; max-height: 74px;"></div>
-									</td>
-								</tr>
-							</table>
-							<table width="100%" style="display: none; width: 100%;">
-								<tr>
-									<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
-									<td style="">
-										<img src="https://fluid-line.ru/assets/mailing/almata/preview.png">
-									</td>
-									<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
-								</tr>
-							</table>
-						</td>
-						<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td height="30px" style="min-height: 30px; height: 30px; max-height: 30px;"></td>
-			</tr>
-			<tr>
-				<td>
-					<table width="100%" style="width: 100%;">
+					<table width="100%" style="width: 100%; background-image: url('https://fluid-line.ru/assets/mailing/almata/confetti.gif'); background-repeat: no-repeat; background-size: 100%;">
 						<tr>
-							<td width="92px" style="min-width: 92px; width: 92px; max-width: 92px"></td>
-							<td>
-								<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Добрый день, дорогие друзья и партнеры.<br>Спешим поделиться с вами долгожданным событием. <span style="font-weight: 700; ">Мы расширили географию</span> нашего присутствия и свои двери уже открыл наш офис в Казахстане в г. Алматы по адресу: <span style="font-weight: 700;">пр. Достык, ул. Богенбай батыра, 34а/87а, офис 11</span></span>
+							<td height="30px" style="min-height: 30px; height: 30px; max-height: 30px;">
+								<div height="30px" style="min-height: 30px; height: 30px; max-height: 30px;"></div>
 							</td>
-							<td width="92px" style="min-width: 92px; width: 92px; max-width: 92px"></td>
 						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td height="34px" style="min-height: 34px; height: 34px; max-height: 34px;"></td>
-			</tr>
-			<tr>
-				<td>
-					<table>
 						<tr>
 							<td>
-								<a href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">
-									<img src="https://fluid-line.ru/assets/mailing/almata/map.png"/>
-								</a>
-							</td>
-							<td>
-								<img src="https://fluid-line.ru/assets/mailing/almata/delimiter.png">
-							</td>
-							<td width="25px" style="min-width: 25px; width: 25px; max-width: 25px"></td>
-							<td>
-								<table>
-									<tr>
-										<td>
-											<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Открытие этого офиса и склада имеет особое значение для нашей компании. Мы стремимся быть максимально удобными для вас и доставлять наше оборудование в кратчайшие сроки быстро и эффективно не только на территории России но и за ее пределами.</span>
-										</td>
-									</tr>
-									<tr>
-										<td height="16px" style="min-height: 16px; height: 16px; max-width: 16px;">
-											<div height="16px" style="min-height: 16px; height: 16px; max-width: 16px;"></div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Мы работаем над обеспечением и пополнением всех комплектующих запасов на складе, чтобы вы уже сегодня могли ознакомиться с линейкой нашей продукции в каталоге и совершить первый заказ.</span>
-										</td>
-									</tr>
+								<table width="100%" style="width: 100%;">
+									<td class="mail-preview-padding" width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
+									<td class="mail-preview" style="z-index: 1; ">
+										<table style="background-repeat: no-repeat; background-size: 100%; background-image: url('https://fluid-line.ru/assets/mailing/almata/main-preview.png'); max-height: 250px;">
+											<tr>
+												<td class="mail-logo-padding-top" height="34px" style="min-height: 34px; height: 34px; max-height: 34px;">
+													<div class="mail-logo-padding-top" height="34px" style="min-height: 34px; height: 34px; max-height: 34px;"></div>
+												</td>
+											</tr>
+											<tr>
+												<td class="mail-preview-container-padding" width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
+												<td height="19px" style="min-height: 19px; height: 19px; max-height: 19px;">
+													<a href="https://fluid-line.ru/">
+														<img src="https://fluid-line.ru/assets/mailing/almata/logo.png">
+													</a>
+												</td>
+												<td class="mail-preview-container-padding" width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
+											</tr>
+											<tr>
+												<td class="mail-logo-padding-bottom" height="13px" style="min-height: 13px; height: 13px; max-height: 13px;">
+												</td>
+											</tr>
+											<tr>
+												<td class="mail-preview-container-padding" width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
+												<td height="19px" style="min-height: 19px; height: 19px; max-height: 19px;">
+													<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 700; font-size: 32px; line-height: 37px; color: white;">Мы открыли<br> офис в Алматы</span>
+												</td>
+												<td class="mail-preview-container-padding" width="37px" style="min-width: 37px; width: 37px; max-width: 37px"></td>
+											</tr>
+											<tr>
+												<td class="mail-preview-text-padding-bottom" height="104px" style="min-height: 104px; height: 104px; max-height: 104px;"></td>
+											</tr>
+										</table>
+									</td>
+									<td class="mail-preview-padding" width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
 								</table>
 							</td>
-							<td width="68px" style="min-width: 68px; width: 68px; max-width: 68px"></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td height="27px" style="min-height: 27px; height: 27px; max-height: 27px;"></td>
-			</tr>
-			<tr>
-				<td style="background: #242424;">
-					<table align="center" width="100%" style="width: 100%; background: linear-gradient(0deg, #242424 0%, #4085BD 100%);">
-						<tr>
-							<td height="20px" style="min-height: 20px; height: 20px; max-height: 20px;">
-								<div height="20px" style="min-height: 20px; height: 20px; max-height: 20px;"></div>
-							</td>
 						</tr>
 						<tr>
-							<td width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
+							<td height="30px" style="min-height: 30px; height: 30px; max-height: 30px;"></td>
+						</tr>
+						<tr>
 							<td>
 								<table width="100%" style="width: 100%;">
 									<tr>
+										<td class="mail-text-padding" width="92px" style="min-width: 92px; width: 92px; max-width: 92px"></td>
 										<td>
-											<img src="https://fluid-line.ru/assets/mailing/almata/car.png">
+											<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Добрый день, дорогие друзья и партнеры.<br>Спешим поделиться с вами долгожданным событием. <span style="font-weight: 700; ">Мы расширили географию</span> нашего присутствия и свои двери уже открыл наш офис в Казахстане в г. Алматы по адресу: <span style="font-weight: 700;">пр. Достык, ул. Богенбай батыра, 34а/87а, офис 11</span></span>
 										</td>
-										<td width="34px" style="min-width: 34px; width: 34px; max-width: 34px;"></td>
-										<td>
-											<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Поставка со склада по Казахстану производятся <span style="font-weight: 700;">от 1 недели *</span> </span>
-										</td>
-									</tr>
-									<tr>
-										<td height="20px" style="min-height: 20px; height: 20px; max-height: 20px;">
-											<div height="20px" style="min-height: 20px; height: 20px; max-height: 20px;"></div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="https://fluid-line.ru/assets/mailing/almata/warehouse.png">
-										</td>
-										<td width="34px" style="min-width: 34px; width: 34px; max-width: 34px;"></td>
-										<td>
-											<table>
-												<tr>
-													<td>
-														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Наш ассортимент включает в себя все востребованные наименования.</span>
-													</td>
-												</tr>
-												<tr>
-													<td height="10px" style="min-height: 10px; height: 10px; max-height: 10px;">
-														<div height="10px" style="min-height: 10px; height: 10px; max-height: 10px;"></div>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Склад с более <span style="font-weight: 700;">10 000 позиций</span> продукции постоянно увеличивается и автоматизируется.</span>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-									<tr>
-										<td height="20px" style="min-height: 20px; height: 20px; max-height: 20px;">
-											<div height="20px" style="min-height: 20px; height: 20px; max-height: 20px;"></div>
-										</td>
-									</tr>
-								</table>
-								<table width="100%" style="width: 100%;">
-									<tr>
-										<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px;"></td>
-										<td>
-											<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Теперь вы сами можете выбрать, откуда вам удобнее заказать доставку, из нашего офиса в Москве или в Казахстане.</span>
-												
-										</td>
-										<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px;"></td>
+										<td class="mail-text-padding" width="92px" style="min-width: 92px; width: 92px; max-width: 92px"></td>
 									</tr>
 								</table>
 							</td>
-							<td width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
 						</tr>
 						<tr>
-							<td height="24px" style="min-height: 24px; height: 24px; max-height: 24px;"></td>
-						</tr>
-					</table>
-					<table align="center" width="100%;" style="width: 100%;">
-						<tr>
-							<td height="16px" style="min-height: 16px; height: 16px; max-height: 16px;"></td>
+							<td height="34px" style="min-height: 34px; height: 34px; max-height: 34px;"></td>
 						</tr>
 						<tr>
-							<td width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
 							<td>
-								<table width="100%" style="width: 100%;">
+								<table class="mail-map-container" width="100%" style="width: 100%;">
 									<tr>
-										<td align="center">
-											<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">Новости</a>
+										<td class="mail-map">
+											<a href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">
+												<img src="https://fluid-line.ru/assets/mailing/almata/map.png"/>
+											</a>
 										</td>
-										<td align="center">
-											<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">Продукция</a>
+										<td class="mail-delimiter">
+											<img src="https://fluid-line.ru/assets/mailing/almata/delimiter.png">
 										</td>
-										<td align="center">
-											<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">О компании</a>
-										</td>
-										<td align="center">
-											<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">Сертификаты</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
-						</tr>
-						<tr>
-							<td height="16px" style="min-height: 16px; height: 16px; max-height: 16px;"></td>
-						</tr>
-					</table>
-					<table width="100%" style="width: 100%;">
-						<tr>
-							<td width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
-							<td>
-								<table align="left" width="100%" style="width: 100%;">
-									<tr>
-										<td style="padding-bottom: 9px;">
+										<td class="mail-map-text-padding-left" width="0px" style="min-width: 0px; width: 0px; max-width: 0px;"></td>
+										<td class="mail-map-text">
 											<table width="100%" style="width: 100%;">
 												<tr>
 													<td>
-														<img style="padding-top: 5px !important;" src="https://fluid-line.ru/assets/mailing/almata/phone.png">
+														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Открытие этого офиса и склада имеет особое значение для нашей компании. Мы стремимся быть максимально удобными для вас и доставлять наше оборудование в кратчайшие сроки быстро и эффективно не только на территории России но и за ее пределами.</span>
 													</td>
-													<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px"></td>
-													<td><a style="font-family: 'Tahoma'; font-style: normal; font-weight: 400; font-size: 10px; line-height: 27px; color: #FFFFFF; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a></td>
-													<td width="70px" style="min-width: 70px; width: 70px; max-width: 70px"></td>
-													<td>
-														<img style="padding-top: 5px !important;" src="https://fluid-line.ru/assets/mailing/almata/geo.png">
-													</td>
-													<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px"></td>
-													<td><a style="font-family: 'Tahoma'; font-style: normal; font-weight: 400; font-size: 10px; line-height: 27px; color: #FFFFFF; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a></td>
 												</tr>
 												<tr>
-													<td height="10px" style="min-height: 10px; height: 10px; max-height: 10px;">
-														<div height="10px" style="min-height: 10px; height: 10px; max-height: 10px;"></div>
+													<td height="16px" style="min-height: 16px; height: 16px; max-width: 16px;">
+														<div height="16px" style="min-height: 16px; height: 16px; max-width: 16px;"></div>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<img style="padding-top: 5px !important;" src="https://fluid-line.ru/assets/mailing/almata/mail.png">
+														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Мы работаем над обеспечением и пополнением всех комплектующих запасов на складе, чтобы вы уже сегодня могли ознакомиться с линейкой нашей продукции в каталоге и совершить первый заказ.</span>
 													</td>
-													<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px"></td>
-													<td><a style="font-family: 'Tahoma'; font-style: normal; font-weight: 400; font-size: 10px; line-height: 27px; color: #FFFFFF; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a></td>
 												</tr>
 											</table>
 										</td>
+										<td class="mail-map-text-padding-right" width="68px" style="min-width: 68px; width: 68px; max-width: 68px"></td>
+									</tr>
+								</table>
+								<table class="mail-map-container-sm" style="display: none;">
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="mail-map">
+														<a href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">
+															<img src="https://fluid-line.ru/assets/mailing/almata/map.png"/>
+														</a>
+													</td>
+													<td class="mail-delimiter">
+														<img src="https://fluid-line.ru/assets/mailing/almata/delimiter.png">
+													</td>
+													<td class="mail-map-text-padding-left" width="0px" style="min-width: 0px; width: 0px; max-width: 0px;"></td>
+												</tr>
+											</table>
+											<table>
+												<tr>
+													<td class="mail-map-text">
+														<table width="100%" style="width: 100%;">
+															<tr>
+																<td>
+																	<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Открытие этого офиса и склада имеет особое значение для нашей компании. Мы стремимся быть максимально удобными для вас и доставлять наше оборудование в кратчайшие сроки быстро и эффективно не только на территории России но и за ее пределами.</span>
+																</td>
+															</tr>
+															<tr>
+																<td height="16px" style="min-height: 16px; height: 16px; max-width: 16px;">
+																	<div height="16px" style="min-height: 16px; height: 16px; max-width: 16px;"></div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px;">Мы работаем над обеспечением и пополнением всех комплектующих запасов на складе, чтобы вы уже сегодня могли ознакомиться с линейкой нашей продукции в каталоге и совершить первый заказ.</span>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+										
+										
+										
+										<td class="mail-map-text-padding-right" width="68px" style="min-width: 68px; width: 68px; max-width: 68px"></td>
 									</tr>
 								</table>
 							</td>
-							<td width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
 						</tr>
 						<tr>
-							<td height="15px" style="min-height: 15px; height: 15px; max-height: 15px;"></td>
+							<td height="27px" style="min-height: 27px; height: 27px; max-height: 27px;"></td>
 						</tr>
-					</table>
-					<table align="center" width="100%" style="width: 100%;">
 						<tr>
-							<td width="28px" style="min-width: 28px; width: 28px; max-width: 28px;"></td>
-							<td align="center">
-								<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 11px; line-height: 13px; color: #6D6D6D;">Вы получили это письмо, потому что подписаны на еженедельную рассылку Fluid-Line. <a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 8px; line-height: 10px; text-align: center; background: #4B4B4B; padding: 2px; text-decoration: none; color: white;" href="#">Отписаться</a></span>
+							<td style="background: #242424;">
+								<table align="center" width="100%" style="width: 100%; background: linear-gradient(0deg, #242424 0%, #4085BD 100%);">
+									<tr>
+										<td height="20px" style="min-height: 20px; height: 20px; max-height: 20px;">
+											<div height="20px" style="min-height: 20px; height: 20px; max-height: 20px;"></div>
+										</td>
+									</tr>
+									<tr>
+										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
+										<td>
+											<table width="100%" style="width: 100%;">
+												<tr>
+													<td>
+														<img src="https://fluid-line.ru/assets/mailing/almata/car.png">
+													</td>
+													<td width="34px" style="min-width: 34px; width: 34px; max-width: 34px;"></td>
+													<td>
+														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Поставка со склада по Казахстану производятся <span style="font-weight: 700;">от 1 недели *</span> </span>
+													</td>
+												</tr>
+												<tr>
+													<td height="20px" style="min-height: 20px; height: 20px; max-height: 20px;">
+														<div height="20px" style="min-height: 20px; height: 20px; max-height: 20px;"></div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src="https://fluid-line.ru/assets/mailing/almata/warehouse.png">
+													</td>
+													<td width="34px" style="min-width: 34px; width: 34px; max-width: 34px;"></td>
+													<td>
+														<table>
+															<tr>
+																<td>
+																	<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Наш ассортимент включает в себя все востребованные наименования.</span>
+																</td>
+															</tr>
+															<tr>
+																<td height="10px" style="min-height: 10px; height: 10px; max-height: 10px;">
+																	<div height="10px" style="min-height: 10px; height: 10px; max-height: 10px;"></div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Склад с более <span style="font-weight: 700;">10 000 позиций</span> продукции постоянно увеличивается и автоматизируется.</span>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height="20px" style="min-height: 20px; height: 20px; max-height: 20px;">
+														<div height="20px" style="min-height: 20px; height: 20px; max-height: 20px;"></div>
+													</td>
+												</tr>
+											</table>
+											<table width="100%" style="width: 100%;">
+												<tr>
+													<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px;"></td>
+													<td>
+														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: white;">Теперь вы сами можете выбрать, откуда вам удобнее заказать доставку, из нашего офиса в Москве или в Казахстане.</span>
+															
+													</td>
+													<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px;"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
+									</tr>
+									<tr>
+										<td height="24px" style="min-height: 24px; height: 24px; max-height: 24px;"></td>
+									</tr>
+								</table>
+								<table align="center" width="100%;" style="width: 100%;">
+									<tr>
+										<td height="16px" style="min-height: 16px; height: 16px; max-height: 16px;"></td>
+									</tr>
+									<tr>
+										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
+										<td>
+											<table width="100%" style="width: 100%;">
+												<tr>
+													<td align="center">
+														<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">Новости</a>
+													</td>
+													<td align="center">
+														<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">Продукция</a>
+													</td>
+													<td align="center">
+														<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">О компании</a>
+													</td>
+													<td align="center">
+														<a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 21px; color: white; text-decoration: none;" href="#">Сертификаты</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
+									</tr>
+									<tr>
+										<td height="16px" style="min-height: 16px; height: 16px; max-height: 16px;"></td>
+									</tr>
+								</table>
+								<table width="100%" style="width: 100%;">
+									<tr>
+										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
+										<td>
+											<table align="left" width="100%" style="width: 100%;">
+												<tr>
+													<td style="padding-bottom: 9px;">
+														<table>
+															<tr>
+																<td class="mail-contacts-phone">
+																	<table>
+																		<tr>
+																			<td>
+																				<img style="padding-top: 5px !important;" src="https://fluid-line.ru/assets/mailing/almata/phone.png">
+																			</td>
+																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px"></td>
+																			<td><a style="font-family: 'Tahoma'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px; color: #FFFFFF; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a></td>
+																			<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
+
+																		</tr>
+																	</table>
+																</td>
+																
+																<td class="mail-contacts-address">
+																	<table>
+																		<tr>
+																			<td>
+																				<img style="padding-top: 5px !important;" src="https://fluid-line.ru/assets/mailing/almata/geo.png">
+																			</td>
+																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px"></td>
+																			<td><a style="font-family: 'Tahoma'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px; color: #FFFFFF; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a></td>
+																		</tr>
+																	</table>
+																</td>
+																
+															</tr>
+															<tr>
+																<td class="mail-contacts-padding-bottom" height="10px" style="min-height: 10px; height: 10px; max-height: 10px;">
+																</td>
+															</tr>
+															<tr>
+																<td class="mail-contacts-mail">
+																	<table>
+																		<tr>
+																			<td>
+																				<img style="padding-top: 5px !important;" src="https://fluid-line.ru/assets/mailing/almata/mail.png">
+																			</td>
+																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px"></td>
+																			<td><a style="font-family: 'Tahoma'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px; color: #FFFFFF; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px"></td>
+									</tr>
+									<tr>
+										<td height="15px" style="min-height: 15px; height: 15px; max-height: 15px;"></td>
+									</tr>
+								</table>
+								<table align="center" width="100%" style="width: 100%;">
+									<tr>
+										<td width="28px" style="min-width: 28px; width: 28px; max-width: 28px;"></td>
+										<td align="center">
+											<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 11px; line-height: 13px; color: #6D6D6D;">Вы получили это письмо, потому что подписаны на еженедельную рассылку Fluid-Line. <a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 8px; line-height: 10px; text-align: center; background: #4B4B4B; padding: 2px; text-decoration: none; color: white;" href="#">Отписаться</a></span>
+										</td>
+										<td width="28px" style="min-width: 28px; width: 28px; max-width: 28px;"></td>
+									</tr>
+									<tr>
+										<td height="24px" style="min-height: 24px; height: 24px; max-height: 24px;"></td>
+									</tr>
+								</table>
 							</td>
-							<td width="28px" style="min-width: 28px; width: 28px; max-width: 28px;"></td>
-						</tr>
-						<tr>
-							<td height="24px" style="min-height: 24px; height: 24px; max-height: 24px;"></td>
 						</tr>
 					</table>
 				</td>
