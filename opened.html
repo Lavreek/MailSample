@@ -4,8 +4,11 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="x-apple-disable-message-reformatting">
+		<meta name="color-scheme" content="light dark">
+		<meta name="supported-color-schemes" content="light dark">
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 		<style type="text/css">
+			:root {color-scheme: light; supported-color-schemes: light; }
 			body {
 				padding: 0;
 				border: 0;
@@ -221,14 +224,17 @@
 	            	background: #242424 !important;
 	            }
 
-	            .mail-footer-table {
-	            	background: linear-gradient(0deg, #242424 0%, #4085BD 100%) !important;
+	            .mail-footer-table, .table-contacts, .table-links, .table-unsc, .table-links-sm, .table-contacts-sm {
+	            	background: white !important;
 	            }
 
-	        }
+	            [data-ogsc] .mail-main-text{
+		            color: #FFFFFF !important;
+		        }
 
-	        [data-ogsc] .mail-main-text{
-	            color: #FFFFFF !important;
+		        [data-ogsc] .mail-footer-table, [data-ogsc] .table-contacts, [data-ogsc] .table-links, [data-ogsc] .table-unsc, [data-ogsc] .table-links-sm, [data-ogsc] .table-contacts-sm {
+		        	background: white !important;
+		        }
 	        }
 		</style>
 	</head>
@@ -387,7 +393,7 @@
 						</tr>
 						<tr>
 							<td class="mail-footer" style="background: #242424; padding: 0; border: 0; border-spacing: 0; padding: 0;">
-								<table class="mail-footer-table" align="center" width="100%" style="border-spacing: 0; border: 0; width: 100%; padding: 0; background: linear-gradient(0deg, #242424 0%, #4085BD 100%);">
+								<table class="mail-footer-table" align="center" width="100%" style="border-spacing: 0; border: 0; width: 100%; padding: 0; background: linear-gradient(0deg, #242424 14.35%, #31526C 55.3%, #4085BD 97.32%);">
 									<tr><td height="20px" style="min-height: 20px; height: 20px; max-height: 20px; padding: 0;"></td></tr>
 									<tr>
 										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px; padding: 0;"></td>
@@ -534,7 +540,7 @@
 																			<td style="padding: 0;">
 																				<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF !important; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
 																			</td>
-																			<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px"></td>
+																			<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px"></td>
 
 																		</tr>
 																	</table>
@@ -643,7 +649,7 @@
 									</tr>
 									<tr><td height="15px" style="min-height: 15px; height: 15px; max-height: 15px; padding: 0;"></td></tr>
 								</table>
-								<table align="center" width="100%" style="width: 100%; border: 0; border-spacing: 0; padding: 0;">
+								<table class="table-unsc" align="center" width="100%" style="width: 100%; border: 0; border-spacing: 0; padding: 0;">
 									<tr>
 										<td width="28px" style="min-width: 28px; width: 28px; max-width: 28px; padding: 0;"></td>
 										<td align="left" style="padding: 0;">
