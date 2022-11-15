@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,7 +8,48 @@
 		<meta name="supported-color-schemes" content="light dark">
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 		<style type="text/css">
-			:root {color-scheme: light; supported-color-schemes: light; }
+			@media screen {
+				html[data-theme="dark"] {
+					color-scheme: light !important;
+				}
+
+				body[data-theme="dark"] {
+					color-scheme: light !important;
+				}
+
+				body {
+					filter: unset !important;
+				}
+
+				body.theme-dark {
+					color-scheme: light !important;
+				}
+
+				:root {
+					color-scheme: light !important;
+				}
+			}
+
+			:root {
+				color-scheme: light !important;
+			}
+
+			html[data-theme="dark"] {
+				color-scheme: light !important;
+			}
+
+			body[data-theme="dark"] {
+				color-scheme: light !important;
+			}
+
+			body {
+				filter: unset !important;
+			}
+
+			body.theme-dark {
+				color-scheme: light !important;
+			}
+
 			body {
 				padding: 0;
 				border: 0;
@@ -215,26 +256,100 @@
 					max-height: 22px !important;
 				}
 			}
+
+			@media (prefers-color-scheme: light) {
+				[data-ogsc] .mail-footer {
+					background: #242424 !important;
+				}
+
+				.mail-footer {
+					background: #242424 !important;
+				}
+
+				[data-ogsc] .mail-footer-table {
+					background: linear-gradient(0deg, #242424 10%, #31526C 60%, #4085BD 100%) !important;
+				}
+
+				.mail-footer-table {
+					background: linear-gradient(0deg, #242424 10%, #31526C 60%, #4085BD 100%) !important;
+				}
+			}
+
 			@media (prefers-color-scheme: dark) {
-	            .mail-main-text {
+				:root {
+					color-scheme: light !important;
+				}
+
+				html[data-theme="dark"] {
+					color-scheme: light !important;
+				}
+
+				body[data-theme="dark"] {
+					color-scheme: light !important;
+				}
+
+				body {
+					filter: unset !important;
+				}
+
+				body.theme-dark {
+					color-scheme: light !important;
+				}
+
+
+	            /*.mail-main-text {
 	                color: #FFFFFF !important;
 	            }
 
-	            .mail-footer {
-	            	background: #242424 !important;
+	            .have-a-nice {
+	            	color: white !important;
 	            }
 
-	            .mail-footer-table, .table-contacts, .table-links, .table-unsc, .table-links-sm, .table-contacts-sm {
+	            .open-office {
+	            	color: white !important;
+	            }
+
+	            .footer-img {
+	            	filter: invert(100%);
+	            }
+
+	            .footer-text {
+	            	color: black !important;
+	            }
+
+	            .footer-links {
+	            	color: black !important;
+	            }
+
+	            .footer-links-con {
+	            	color: black !important;
+	            }
+
+	            .mail-footer-table {
 	            	background: white !important;
 	            }
 
-	            [data-ogsc] .mail-main-text{
-		            color: #FFFFFF !important;
-		        }
+	            .table-links {
+	            	background: white !important;
+	            }
 
-		        [data-ogsc] .mail-footer-table, [data-ogsc] .table-contacts, [data-ogsc] .table-links, [data-ogsc] .table-unsc, [data-ogsc] .table-links-sm, [data-ogsc] .table-contacts-sm {
-		        	background: white !important;
-		        }
+	            .table-contacts {
+	            	background: white !important;
+	            }
+
+	            .table-unsc {
+	            	background: white !important;
+	            }
+
+	            .table-links-sm {
+	            	background: white !important;
+	            }
+	            .mail-footer {
+	            	background: white !important;
+	            }
+	            .table-contacts-sm {
+	            	background: white !important
+	            }
 	        }
 		</style>
 	</head>
@@ -285,7 +400,7 @@
 									<tr>
 										<td class="mail-text-padding" width="92px" style="min-width: 92px; width: 92px; max-width: 92px; padding: 0;"></td>
 										<td style="padding: 0;">
-											<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Добрый день, дорогие друзья и партнеры.<br>Спешим поделиться с вами долгожданным событием. <span style="font-weight: 700;"><br>Мы расширили географию</span> нашего присутствия и свои двери уже открыл наш офис в Казахстане в г. Алматы по адресу: <span style="font-weight: 700;"><a style="color: black; text-decoration: none;" href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">пр. Достык, ул. Богенбай батыра, 34а/87а, офис 11</a></span></span>
+											<span class="have-a-nice" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Добрый день, дорогие друзья и партнеры.<br>Спешим поделиться с вами долгожданным событием. <span style="font-weight: 700;"><br>Мы расширили географию</span> нашего присутствия и свои двери уже открыл наш офис в Казахстане в г. Алматы по адресу: <span style="font-weight: 700;"><a class="have-a-nice" style="color: black; text-decoration: none;" href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">пр. Достык, ул. Богенбай батыра, 34а/87а, офис 11</a></span></span>
 										</td>
 										<td class="mail-text-padding" width="92px" style="min-width: 92px; width: 92px; max-width: 92px; padding: 0;"></td>
 									</tr>
@@ -316,13 +431,13 @@
 											<table width="100%" style="width: 100%; border-spacing: 0;">
 												<tr>
 													<td style="padding: 0;">
-														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Открытие этого офиса и склада имеет особое значение для нашей компании. Мы стремимся быть максимально удобными для вас и доставлять наше оборудование в кратчайшие сроки быстро и эффективно не только на территории России но и за ее пределами.</span>
+														<span class="open-office" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Открытие этого офиса и склада имеет особое значение для нашей компании. Мы стремимся быть максимально удобными для вас и доставлять наше оборудование в кратчайшие сроки быстро и эффективно не только на территории России но и за ее пределами.</span>
 													</td>
 												</tr>
 												<tr><td height="16px" style="min-height: 16px; height: 16px; max-width: 16px; padding: 0;"></td></tr>
 												<tr>
 													<td style="padding: 0;">
-														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Мы работаем над обеспечением и пополнением всех комплектующих запасов на складе, чтобы вы уже сегодня могли ознакомиться с линейкой нашей продукции в каталоге и совершить первый заказ.</span>
+														<span class="open-office" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Мы работаем над обеспечением и пополнением всех комплектующих запасов на складе, чтобы вы уже сегодня могли ознакомиться с линейкой нашей продукции в каталоге и совершить первый заказ.</span>
 													</td>
 												</tr>
 											</table>
@@ -360,7 +475,7 @@
 																	<table style="border: 0; border-spacing: 0;">
 																		<td width="20px" style="min-width: 20px; width: 20px; max-width: 20px; padding: 0;"></td>
 																		<td style="padding: 0;">
-																			<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Открытие этого офиса и склада имеет особое значение для нашей компании. Мы стремимся быть максимально удобными для вас и доставлять наше оборудование в кратчайшие сроки быстро и эффективно не только на территории России но и за ее пределами.</span>
+																			<span class="open-office" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Открытие этого офиса и склада имеет особое значение для нашей компании. Мы стремимся быть максимально удобными для вас и доставлять наше оборудование в кратчайшие сроки быстро и эффективно не только на территории России но и за ее пределами.</span>
 																		</td>
 																		<td width="20px" style="min-width: 20px; width: 20px; max-width: 20px; padding: 0;"></td>
 																	</table>
@@ -372,7 +487,7 @@
 																	<table style="border: 0; border-spacing: 0;">
 																		<td width="20px" style="min-width: 20px; width: 20px; max-width: 20px; padding: 0;"></td>
 																		<td style="padding: 0;">
-																			<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Мы работаем над обеспечением и пополнением всех комплектующих запасов на складе, чтобы вы уже сегодня могли ознакомиться с линейкой нашей продукции в каталоге и совершить первый заказ.</span>
+																			<span class="open-office" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Мы работаем над обеспечением и пополнением всех комплектующих запасов на складе, чтобы вы уже сегодня могли ознакомиться с линейкой нашей продукции в каталоге и совершить первый заказ.</span>
 																		</td>
 																		<td width="20px" style="min-width: 20px; width: 20px; max-width: 20px; padding: 0;"></td>
 																	</table>
@@ -393,7 +508,7 @@
 						</tr>
 						<tr>
 							<td class="mail-footer" style="background: #242424; padding: 0; border: 0; border-spacing: 0; padding: 0;">
-								<table class="mail-footer-table" align="center" width="100%" style="border-spacing: 0; border: 0; width: 100%; padding: 0; background: linear-gradient(0deg, #242424 14.35%, #31526C 55.3%, #4085BD 97.32%);">
+								<table class="mail-footer-table" align="center" width="100%" style="border-spacing: 0; border: 0; width: 100%; padding: 0; background: linear-gradient(0deg, #242424 10%, #31526C 60%, #4085BD 100%);">
 									<tr><td height="20px" style="min-height: 20px; height: 20px; max-height: 20px; padding: 0;"></td></tr>
 									<tr>
 										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px; padding: 0;"></td>
@@ -401,11 +516,11 @@
 											<table width="100%" style="width: 100%; border: 0; border-spacing: 0;">
 												<tr>
 													<td style="padding: 0;">
-														<img src="https://fluid-line.ru/assets/mailing/almata/car.png">
+														<img class="footer-img" src="https://fluid-line.ru/assets/mailing/almata/car.png">
 													</td>
 													<td width="34px" style="min-width: 34px; width: 34px; max-width: 34px; padding: 0;"></td>
 													<td style="padding: 0;">
-														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white !important;">Поставка со склада по Казахстану производятся <span style="font-weight: 700;">от 1 недели *</span> </span>
+														<span class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Поставка со склада по Казахстану производятся <span style="font-weight: 700;">от 1 недели *</span> </span>
 													</td>
 												</tr>
 												<tr><td height="20px" style="min-height: 20px; height: 20px; max-height: 20px; padding: 0;"></td></tr>
@@ -418,7 +533,7 @@
 														<table style="border: 0; border-spacing: 0;">
 															<tr>
 																<td style="padding: 0;">
-																	<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white !important;">Наш ассортимент включает в себя все востребованные наименования.</span>
+																	<span class="footer-text" style=" font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Наш ассортимент включает в себя все востребованные наименования.</span>
 																</td>
 															</tr>
 															<tr>
@@ -428,7 +543,7 @@
 															</tr>
 															<tr>
 																<td style="padding: 0;">
-																	<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white !important;">Склад с более <span style="font-weight: 700;">10 000 позиций</span> продукции постоянно увеличивается и автоматизируется.</span>
+																	<span class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Склад с более <span style="font-weight: 700;">10 000 позиций</span> продукции постоянно увеличивается и автоматизируется.</span>
 																</td>
 															</tr>
 														</table>
@@ -440,7 +555,7 @@
 												<tr>
 													<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px; padding: 0;"></td>
 													<td style="padding: 0;">
-														<span style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white !important;">Теперь вы сами можете выбрать, откуда вам удобнее заказать доставку, из нашего офиса в Москве или<br class="kaz-del"> в Казахстане.</span>
+														<span class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Теперь вы сами можете выбрать, откуда вам удобнее заказать доставку, из нашего офиса в Москве или<br class="kaz-del"> в Казахстане.</span>
 															
 													</td>
 													<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px; padding: 0;"></td>
@@ -459,16 +574,16 @@
 											<table width="100%" style="width: 100%; border: 0; border-spacing: 0;">
 												<tr>
 													<td align="center" style="padding: 0;">
-														<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">Новости</a>
+														<a class="footer-links" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">Новости</a>
 													</td>
 													<td align="center" style="padding: 0;">
-														<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">Продукция</a>
+														<a class="footer-links" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">Продукция</a>
 													</td>
 													<td align="center" style="padding: 0;">
-														<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">О компании</a>
+														<a class="footer-links" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">О компании</a>
 													</td>
 													<td align="center" style="padding: 0;">
-														<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">Сертификаты</a>
+														<a class="footer-links" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">Сертификаты</a>
 													</td>
 												</tr>
 											</table>
@@ -488,11 +603,11 @@
 														<table style="border: 0; border-spacing: 0;">
 															<tr>
 																<td style="padding: 0;">
-																	<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">Новости</a>
+																	<a class="footer-links" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">Новости</a>
 																</td>
 																<td width="10px" style="min-width: 10px; width: 10px; max-width: 10px; padding: 0;"></td>
 																<td style="padding: 0;">
-																	<a style="min-width: 100px; font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">Продукция</a>
+																	<a class="footer-links" style="min-width: 100px; font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">Продукция</a>
 																</td>
 															</tr>
 														</table>
@@ -503,11 +618,11 @@
 														<table style="border: 0; border-spacing: 0;">
 															<tr>
 																<td style="padding: 0;">
-																	<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">О компании</a>
+																	<a class="footer-links" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">О компании</a>
 																</td>
 																<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px; padding: 0;"></td>
 																<td style="padding: 0;">
-																	<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white !important; text-decoration: none;" href="#">Сертификаты</a>
+																	<a class="footer-links" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 21px !important; color: white; text-decoration: none;" href="#">Сертификаты</a>
 																</td>
 															</tr>
 														</table>
@@ -538,7 +653,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF !important; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
 																			</td>
 																			<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px"></td>
 
@@ -553,7 +668,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF !important; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -569,7 +684,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF !important; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -601,7 +716,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF !important; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
 																			</td>
 																			<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px; padding: 0;"></td>
 																		</tr>
@@ -618,7 +733,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF !important; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -634,7 +749,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF !important; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
 																			</td>
 																		</tr>
 																	</table>
