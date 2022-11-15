@@ -8,45 +8,12 @@
 		<meta name="supported-color-schemes" content="light dark">
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 		<style type="text/css">
-			@media screen {
-				html[data-theme="dark"] {
-					color-scheme: light !important;
-				}
-
-				body[data-theme="dark"] {
-					color-scheme: light !important;
-				}
-
-				body {
-					filter: unset !important;
-				}
-
-				body.theme-dark {
-					color-scheme: light !important;
-				}
-
-				:root {
-					color-scheme: light !important;
-				}
+			body, table, tbody, tr, td, a, span, p {
+				/*mix-blend-mode: normal !important;*/
+				/*background-blend-mode: normal !important;*/
 			}
 
 			:root {
-				color-scheme: light !important;
-			}
-
-			html[data-theme="dark"] {
-				color-scheme: light !important;
-			}
-
-			body[data-theme="dark"] {
-				color-scheme: light !important;
-			}
-
-			body {
-				filter: unset !important;
-			}
-
-			body.theme-dark {
 				color-scheme: light !important;
 			}
 
@@ -75,11 +42,7 @@
 				line-height: 12px;
 			}
 
-			@media (max-width: 600px) {
-				.main-table {
-					min-width: 425px !important;
-				}
-
+			@media screen and (max-width: 600px) {
 				.mail-preview {
 					min-height: 215px !important;
 					max-height: 250px !important;
@@ -138,7 +101,7 @@
 				}
 			}
 
-			@media (max-width: 425px) {
+			@media screen and (max-width: 425px) {
 				.mail-text-padding-top {
 					height: 0 !important;
 				}
@@ -256,14 +219,19 @@
 					max-height: 22px !important;
 				}
 			}
+			
 
 			@media (prefers-color-scheme: light) {
+				:root {
+					color-scheme: light !important;
+				}
+
 				[data-ogsc] .mail-footer {
 					background: #242424 !important;
 				}
 
 				.mail-footer {
-					background: #242424 !important;
+					background: linear-gradient(0deg, #242424 0%, #242424 100%) !important;
 				}
 
 				[data-ogsc] .mail-footer-table {
@@ -277,27 +245,10 @@
 
 			@media (prefers-color-scheme: dark) {
 				:root {
-					color-scheme: light !important;
+					color-scheme: dark !important;
 				}
 
-				html[data-theme="dark"] {
-					color-scheme: light !important;
-				}
-
-				body[data-theme="dark"] {
-					color-scheme: light !important;
-				}
-
-				body {
-					filter: unset !important;
-				}
-
-				body.theme-dark {
-					color-scheme: light !important;
-				}
-
-
-	            /*.mail-main-text {
+	            .mail-main-text {
 	                color: #FFFFFF !important;
 	            }
 
@@ -331,10 +282,14 @@
 
 	            .table-links {
 	            	background: white !important;
+	            	mix-blend-mode: normal !important;
+	            	background-blend-mode: normal !important;
 	            }
 
 	            .table-contacts {
 	            	background: white !important;
+	            	mix-blend-mode: normal !important;
+	            	background-blend-mode: normal !important;
 	            }
 
 	            .table-unsc {
@@ -348,12 +303,14 @@
 	            	background: white !important;
 	            }
 	            .table-contacts-sm {
-	            	background: white !important
+	            	background: white !important;
+	            	mix-blend-mode: normal !important;
+	            	background-blend-mode: normal !important;
 	            }
 	        }
 		</style>
 	</head>
-	<body style="margin: 0; padding: 0; border: 0; background: none; min-width: 320px;">
+	<body style="margin: 0; padding: 0; border: 0; min-width: 320px;">
 		<table class="main-table" align="center" width="100%" style="min-width: 600px; max-width: 600px; width: 100%; border: 0; border-spacing: 0;">
 			<tr>
 				<td style="padding: 0;">
@@ -380,7 +337,7 @@
 														<tr><td height="13px" style="min-height: 13px; height: 13px; max-height: 13px; padding: 0;"></td></tr>
 														<tr>
 															<td style="padding: 0;">
-																<span class="mail-main-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 700; font-size: 32px; line-height: 37px; color: white;">Мы открыли<br> офис в Алматы</span>
+																<span class="mail-main-text" id="mail-main-text" style="color: white !important; font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 700; font-size: 32px; line-height: 37px; ">Мы открыли<br> офис в Алматы</span>
 															</td>
 														</tr>
 													</table>
@@ -400,7 +357,7 @@
 									<tr>
 										<td class="mail-text-padding" width="92px" style="min-width: 92px; width: 92px; max-width: 92px; padding: 0;"></td>
 										<td style="padding: 0;">
-											<span class="have-a-nice" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Добрый день, дорогие друзья и партнеры.<br>Спешим поделиться с вами долгожданным событием. <span style="font-weight: 700;"><br>Мы расширили географию</span> нашего присутствия и свои двери уже открыл наш офис в Казахстане в г. Алматы по адресу: <span style="font-weight: 700;"><a class="have-a-nice" style="color: black; text-decoration: none;" href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">пр. Достык, ул. Богенбай батыра, 34а/87а, офис 11</a></span></span>
+											<span class="have-a-nice" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px !important;">Добрый день, дорогие друзья и партнеры.<br>Спешим поделиться с вами долгожданным событием. <span style="font-weight: 700;"><br>Мы расширили географию</span> нашего присутствия и свои двери уже открыл наш офис в Казахстане в г. Алматы по адресу: <span style="font-weight: 700;"><a class="have-a-nice" style="color: black; text-decoration: none;" href="https://yandex.ru/maps/162/almaty/house/Y08YfwNmSkEBQFppfX50dHhqZQ==/?ll=76.946864%2C43.255349&z=18.8" target="_blank">проспект Нурсултана Назарбаева, 113/55, 40</a></span></span>
 										</td>
 										<td class="mail-text-padding" width="92px" style="min-width: 92px; width: 92px; max-width: 92px; padding: 0;"></td>
 									</tr>
@@ -415,7 +372,7 @@
 								<table class="mail-map-container" width="100%" style="width: 100%; border-spacing: 0; padding: 0;">
 									<tr>
 										<td class="mail-map" style="padding: 0; border: 0; padding: 0;">
-											<a href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">
+											<a href="https://yandex.ru/maps/162/almaty/house/Y08YfwNmSkEBQFppfX50dHhqZQ==/?ll=76.946864%2C43.255349&z=18.8" target="_blank">
 												<table>
 													<tr>
 														<td class="mail-map-fill" height="234px" width="199px" style="min-width: 199px; min-height: 234px; width: 199px; height: 234px; max-height: 234px; max-width: 234px; padding: 0; border: 0; border-spacing: 0; background-image: url('https://fluid-line.ru/assets/mailing/almata/map.png'); vertical-align: middle;">
@@ -451,7 +408,7 @@
 											<table style="width: unset; border: 0; border-spacing: 0;">
 												<tr>
 													<td class="mail-map" style="padding: 0; border: 0; padding: 0;">
-														<a href="https://yandex.ru/maps/162/almaty/house/Y08YfwJlQUAHQFppfX50dX5iYw==/?ll=76.956196%2C43.254047&z=17.94" target="_blank">
+														<a href="https://yandex.ru/maps/162/almaty/house/Y08YfwNmSkEBQFppfX50dHhqZQ==/?ll=76.946864%2C43.255349&z=18.8" target="_blank">
 															<table>
 																<tr>
 																	<td class="mail-map-fill" height="234px" width="199px" style="min-width: 199px; min-height: 234px; width: 199px; height: 234px; max-height: 234px; max-width: 234px; padding: 0; border: 0; border-spacing: 0; background-image: url('https://fluid-line.ru/assets/mailing/almata/map.png');">
@@ -507,8 +464,8 @@
 							<td height="27px" style="min-height: 27px; height: 27px; max-height: 27px; padding: 0;"></td>
 						</tr>
 						<tr>
-							<td class="mail-footer" style="background: #242424; padding: 0; border: 0; border-spacing: 0; padding: 0;">
-								<table class="mail-footer-table" align="center" width="100%" style="border-spacing: 0; border: 0; width: 100%; padding: 0; background: linear-gradient(0deg, #242424 10%, #31526C 60%, #4085BD 100%);">
+							<td class="mail-footer" style="mix-blend-mode: unset !important; background-blend-mode: unset !important; background: linear-gradient(0deg, #242424 0%, #242424 100%); padding: 0; border: 0; border-spacing: 0; padding: 0;">
+								<table class="mail-footer-table" align="center" width="100%" style="mix-blend-mode: unset !important; background-blend-mode: unset !important; border-spacing: 0; border: 0; width: 100%; padding: 0; background: linear-gradient(0deg, #242424 10%, #31526C 60%, #4085BD 100%);">
 									<tr><td height="20px" style="min-height: 20px; height: 20px; max-height: 20px; padding: 0;"></td></tr>
 									<tr>
 										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px; padding: 0;"></td>
@@ -520,7 +477,7 @@
 													</td>
 													<td width="34px" style="min-width: 34px; width: 34px; max-width: 34px; padding: 0;"></td>
 													<td style="padding: 0;">
-														<span class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Поставка со склада по Казахстану производятся <span style="font-weight: 700;">от 1 недели *</span> </span>
+														<span class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Поставка со склада по Казахстану производятся <span style="font-weight: 700;">от 1 недели *</span></span>
 													</td>
 												</tr>
 												<tr><td height="20px" style="min-height: 20px; height: 20px; max-height: 20px; padding: 0;"></td></tr>
@@ -533,7 +490,7 @@
 														<table style="border: 0; border-spacing: 0;">
 															<tr>
 																<td style="padding: 0;">
-																	<span class="footer-text" style=" font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Наш ассортимент включает в себя все востребованные наименования.</span>
+																	<span class="footer-text" style=" font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white; background-blend-mode: unset !important; mix-blend-mode: unset !important;">Наш ассортимент включает в себя все востребованные наименования.</span>
 																</td>
 															</tr>
 															<tr>
@@ -543,7 +500,7 @@
 															</tr>
 															<tr>
 																<td style="padding: 0;">
-																	<span class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Склад с более <span style="font-weight: 700;">10 000 позиций</span> продукции постоянно увеличивается и автоматизируется.</span>
+																	<span class="footer-text" style=" background-blend-mode: unset !important; mix-blend-mode: unset !important; font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Склад с более <span style="font-weight: 700;">10 000 позиций</span> продукции постоянно увеличивается и автоматизируется.</span>
 																</td>
 															</tr>
 														</table>
@@ -555,7 +512,7 @@
 												<tr>
 													<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px; padding: 0;"></td>
 													<td style="padding: 0;">
-														<span class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Теперь вы сами можете выбрать, откуда вам удобнее заказать доставку, из нашего офиса в Москве или<br class="kaz-del"> в Казахстане.</span>
+														<p class="footer-text" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px !important; color: white;">Теперь вы сами можете выбрать, откуда вам удобнее заказать доставку, из нашего офиса в Москве или<br class="kaz-del"> в Казахстане.</p>
 															
 													</td>
 													<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px; padding: 0;"></td>
@@ -566,7 +523,7 @@
 									</tr>
 									<tr><td height="24px" style="min-height: 24px; height: 24px; max-height: 24px; padding: 0;"></td></tr>
 								</table>
-								<table class="table-links" align="center" width="100%;" style="width: 100%; border: 0; border-spacing: 0;">
+								<table class="table-links" align="center" width="100%;" style="width: 100%; border: 0; border-spacing: 0; background: linear-gradient(0deg, #242424 0%, #242424 100%); background-blend-mode: unset !important; mix-blend-mode: unset !important;">
 									<tr><td height="16px" style="min-height: 16px; height: 16px; max-height: 16px; padding: 0;"></td></tr>
 									<tr>
 										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px; padding: 0;"></td>
@@ -636,7 +593,7 @@
 										<td height="16px" style="min-height: 16px; height: 16px; max-height: 16px; padding: 0;"></td>
 									</tr>
 								</table>
-								<table class="table-contacts" width="100%" style="width: 100%; border: 0; border-spacing: 0;">
+								<table class="table-contacts" width="100%" style="width: 100%; border: 0; border-spacing: 0; background: linear-gradient(0deg, #242424 0%, #242424 100%) background-blend-mode: unset !important; mix-blend-mode: unset !important;">
 									<tr>
 										<td class="mail-footer-padding" width="67px" style="min-width: 67px; width: 67px; max-width: 67px; padding: 0;"></td>
 										<td style="padding: 0;">
@@ -653,7 +610,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: white !important; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
 																			</td>
 																			<td width="15px" style="min-width: 15px; width: 15px; max-width: 15px"></td>
 
@@ -668,7 +625,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: white; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -684,7 +641,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -716,7 +673,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: white; text-decoration: none;" href="tel:+74959844100">+7 (495) 984-41-00</a>
 																			</td>
 																			<td width="30px" style="min-width: 30px; width: 30px; max-width: 30px; padding: 0;"></td>
 																		</tr>
@@ -733,7 +690,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: white; text-decoration: none;" href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_49/Z04YcQZlT0AHQFtvfXt5cHpkYg==/?indoorLevel=1&ll=37.717838%2C55.781830&z=17.34">Москва, ул.Большая Cеменовская, д.49</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -749,7 +706,7 @@
 																			</td>
 																			<td width="16px" style="min-width: 16px; width: 16px; max-width: 16px; padding: 0;"></td>
 																			<td style="padding: 0;">
-																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: #FFFFFF; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
+																				<a class="footer-links-con" style="font-family: Inter, Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 27px !important; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -764,7 +721,7 @@
 									</tr>
 									<tr><td height="15px" style="min-height: 15px; height: 15px; max-height: 15px; padding: 0;"></td></tr>
 								</table>
-								<table class="table-unsc" align="center" width="100%" style="width: 100%; border: 0; border-spacing: 0; padding: 0;">
+								<table class="table-unsc" align="center" width="100%" style="width: 100%; border: 0; border-spacing: 0; padding: 0; background: linear-gradient(0deg, #242424 0%, #242424 100%); background-blend-mode: unset !important; mix-blend-mode: unset !important;">
 									<tr>
 										<td width="28px" style="min-width: 28px; width: 28px; max-width: 28px; padding: 0;"></td>
 										<td align="left" style="padding: 0;">
